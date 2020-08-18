@@ -275,15 +275,15 @@ html {
           box-sizing: border-box;
 }
 
-.animated-button1 {
-  background: linear-gradient(-30deg, #3d0b0b 50%, #2b0808 50%);
+.animated-button {
+  background: linear-gradient(-30deg, #0b1b3d 50%, #08142b 50%);
   padding: 20px 40px;
   margin: 12px;
   display: inline-block;
   -webkit-transform: translate(0%, 0%);
           transform: translate(0%, 0%);
   overflow: hidden;
-  color: #f7d4d4;
+  color: #d4e0f7;
   font-size: 20px;
   letter-spacing: 2.5px;
   text-align: center;
@@ -293,36 +293,47 @@ html {
           box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
 }
 
-.animated-button1::before {
+.animated-button::before {
   content: '';
   position: absolute;
   top: 0px;
   left: 0px;
   width: 100%;
   height: 100%;
-  background-color: #ad8585;
+  background-color: #8592ad;
   opacity: 0;
   -webkit-transition: .2s opacity ease-in-out;
   transition: .2s opacity ease-in-out;
 }
 
-.animated-button1:hover::before {
+.animated-button:hover::before {
   opacity: 0.2;
 }
 
-.animated-button1 span {
+.animated-button span {
   position: absolute;
 }
 
-.animated-button1 span:nth-child(1) {
+.animated-button span:nth-child(1) {
   top: 0px;
   left: 0px;
   width: 100%;
   height: 2px;
-  background: -webkit-gradient(linear, right top, left top, from(rgba(43, 8, 8, 0)), to(#d92626));
-  background: linear-gradient(to left, rgba(43, 8, 8, 0), #d92626);
+  background: -webkit-gradient(linear, right top, left top, from(rgba(8, 20, 43, 0)), to(#2662d9));
+  background: linear-gradient(to left, rgba(8, 20, 43, 0), #2662d9);
   -webkit-animation: 2s animateTop linear infinite;
           animation: 2s animateTop linear infinite;
+}
+
+@-webkit-keyframes animateTop {
+  0% {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+  100% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
 }
 
 @keyframes animateTop {
@@ -336,15 +347,26 @@ html {
   }
 }
 
-.animated-button1 span:nth-child(2) {
+.animated-button span:nth-child(2) {
   top: 0px;
   right: 0px;
   height: 100%;
   width: 2px;
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(43, 8, 8, 0)), to(#d92626));
-  background: linear-gradient(to top, rgba(43, 8, 8, 0), #d92626);
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(8, 20, 43, 0)), to(#2662d9));
+  background: linear-gradient(to top, rgba(8, 20, 43, 0), #2662d9);
   -webkit-animation: 2s animateRight linear -1s infinite;
           animation: 2s animateRight linear -1s infinite;
+}
+
+@-webkit-keyframes animateRight {
+  0% {
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+  }
+  100% {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
 }
 
 @keyframes animateRight {
@@ -358,15 +380,26 @@ html {
   }
 }
 
-.animated-button1 span:nth-child(3) {
+.animated-button span:nth-child(3) {
   bottom: 0px;
   left: 0px;
   width: 100%;
   height: 2px;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(43, 8, 8, 0)), to(#d92626));
-  background: linear-gradient(to right, rgba(43, 8, 8, 0), #d92626);
+  background: -webkit-gradient(linear, left top, right top, from(rgba(8, 20, 43, 0)), to(#2662d9));
+  background: linear-gradient(to right, rgba(8, 20, 43, 0), #2662d9);
   -webkit-animation: 2s animateBottom linear infinite;
           animation: 2s animateBottom linear infinite;
+}
+
+@-webkit-keyframes animateBottom {
+  0% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+  100% {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
 }
 
 @keyframes animateBottom {
@@ -380,15 +413,26 @@ html {
   }
 }
 
-.animated-button1 span:nth-child(4) {
+.animated-button span:nth-child(4) {
   top: 0px;
   left: 0px;
   height: 100%;
   width: 2px;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(43, 8, 8, 0)), to(#d92626));
-  background: linear-gradient(to bottom, rgba(43, 8, 8, 0), #d92626);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(8, 20, 43, 0)), to(#2662d9));
+  background: linear-gradient(to bottom, rgba(8, 20, 43, 0), #2662d9);
   -webkit-animation: 2s animateLeft linear -1s infinite;
           animation: 2s animateLeft linear -1s infinite;
+}
+
+@-webkit-keyframes animateLeft {
+  0% {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+  100% {
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+  }
 }
 
 @keyframes animateLeft {
@@ -401,6 +445,7 @@ html {
             transform: translateY(100%);
   }
 }
+
 
 
 /*# sourceMappingURL=button.css.map */
@@ -439,7 +484,7 @@ html {
 
     <header>
         <div class="progress">
-            <div class="progress-bar progress-bar-danger progress-bar-striped active" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:100%"><p style="font-size: 15px; padding: 10px;">
+            <div class="progress-bar progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:100%"><p style="font-size: 15px; padding: 10px;">
 			<!--Progress bar text -->KFC Summer Gift Cards Giveaway Ends Soon! 
 			</div>
       </div>
@@ -448,7 +493,7 @@ html {
 
     <section class="top">
         <div class="img-container">
-            <img src="images/p1.png" alt="">
+            <img src="images/p2.png" alt="">
         </div>
     </section>
 
@@ -626,7 +671,7 @@ html {
 <!--Mailerlite Form Button Code Stats Here-->
     <section class="buttons" style="padding-top: 0px;">
 
-        <button class="animated-button1" ; onclick="ml_account('webforms', '2443777', 't7e9r6', 'show')">
+        <button class="animated-button" ; onclick="ml_account('webforms', '2443777', 't7e9r6', 'show')">
 		<span></span>
 		<span></span>
 		<span></span>
