@@ -10,6 +10,107 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   
    <style>
+  .custom-social-proof {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  z-index: 9999999999999 !important;
+  font-family: 'Open Sans', sans-serif;
+}
+.custom-social-proof .custom-notification {
+  width: 320px;
+  border: 0;
+  text-align: left;
+  z-index: 99999;
+  box-sizing: border-box;
+  font-weight: 400;
+  border-radius: 6px;
+  box-shadow: 2px 2px 10px 2px rgba(11, 10, 10, 0.2);
+  background-color: #fff;
+  position: relative;
+  cursor: pointer;
+}
+.custom-social-proof .custom-notification .custom-notification-container {
+  display: flex !important;
+  align-items: center;
+  height: 80px;
+}
+.custom-social-proof .custom-notification .custom-notification-container .custom-notification-image-wrapper img {
+  max-height: 75px;
+  width: 90px;
+  overflow: hidden;
+  border-radius: 6px 0 0 6px;
+  object-fit: cover;
+}
+.custom-social-proof .custom-notification .custom-notification-container .custom-notification-content-wrapper {
+  margin: 0;
+  height: 100%;
+  color: gray;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 0 6px 6px 0;
+  flex: 1;
+  display: flex !important;
+  flex-direction: column;
+  justify-content: center;
+}
+.custom-social-proof .custom-notification .custom-notification-container .custom-notification-content-wrapper .custom-notification-content {
+  font-family: inherit !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  font-size: 14px;
+  line-height: 16px;
+}
+.custom-social-proof .custom-notification .custom-notification-container .custom-notification-content-wrapper .custom-notification-content small {
+  margin-top: 3px !important;
+  display: block !important;
+  font-size: 12px !important;
+  opacity: .8;
+}
+.custom-social-proof .custom-notification .custom-close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  height: 12px;
+  width: 12px;
+  cursor: pointer;
+  transition: .2s ease-in-out;
+  transform: rotate(45deg);
+  opacity: 0;
+}
+.custom-social-proof .custom-notification .custom-close::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: gray;
+  position: absolute;
+  left: 0;
+  top: 5px;
+}
+.custom-social-proof .custom-notification .custom-close::after {
+  content: "";
+  display: block;
+  height: 100%;
+  width: 2px;
+  background-color: gray;
+  position: absolute;
+  left: 5px;
+  top: 0;
+}
+.custom-social-proof .custom-notification:hover .custom-close {
+  opacity: 1;
+}
+
+.noti {
+  display: none;
+}
+
+.team__person_active,
+.team__person_old {
+  display: block;
+}
+   <!--Progress Bar-->
  #progress_bar {
             margin-top: 15px
         }
@@ -410,32 +511,11 @@ html {
 /*# sourceMappingURL=button.css.map */
 <!--Button Animation Ends-->
     </style>
-<!-- Pop up -->
-<div style="position: relative;bottom: 0;left: 0;" id="juicier-container" data-account-id="vVI5tJDIrJZng3XLOwXdFE9GcE52"><a style="font-size: 8px;color: #19191f36;text-decoration: none;" href="https://prooffactor.com" target="_blank">Powered by ProofFactor - Social Proof Notifications</a></div><script type="text/javascript" src="https://cdn.prooffactor.com/javascript/dist/1.0/jcr-widget.js?account_id=vVI5tJDIrJZng3XLOwXdFE9GcE52"></script>
-<!--Popup Ends --> 
-    <script>
-        (function(m,a,i,l,e,r){ m['MailerLiteObject']=e;function f(){
-        var c={ a:arguments,q:[]};var r=this.push(c);return "number"!=typeof r?r:f.bind(c.q);}
-        f.q=f.q||[];m[e]=m[e]||f.bind(f.q);m[e].q=m[e].q||f.q;r=a.createElement(i);
-        var _=a.getElementsByTagName(i)[0];r.async=1;r.src=l+'?v'+(~~(new Date().getTime()/1000000));
-        _.parentNode.insertBefore(r,_);})(window, document, 'script', 'https://static.mailerlite.com/js/universal.js', 'ml');
-        
-        var ml_account = ml('accounts', '345727', 'm0r3r6v7r0', 'load');
-    </script>
+ 
+    <script src="./Mailerlite.js"></script>
 
 <!-- Facebook Pixel Code -->
-<script>
-  !function(f,b,e,v,n,t,s)
-  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-  n.queue=[];t=b.createElement(e);t.async=!0;
-  t.src=v;s=b.getElementsByTagName(e)[0];
-  s.parentNode.insertBefore(t,s)}(window, document,'script',
-  'https://connect.facebook.net/en_US/fbevents.js');
-  fbq('init', '677561949466834');
-  fbq('track', 'PageView');
-</script>
+<script src="./Facebook.js"></script>
 <noscript><img height="1" width="1" style="display:none"
   src="https://www.facebook.com/tr?id=677561949466834&ev=PageView&noscript=1"
 /></noscript>
@@ -462,163 +542,7 @@ html {
 	<!--Countdown Timer Starts Here -->
 	 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 
-    <script type="text/javascript">
-        function randomIntFromInterval(min, max) {
-            return Math.floor(Math.random() * (max - min + 1) + min);
-        }
-
-        // Settings are here
-        var total_items = 50;
-        var d = new Date();
-        var min_items_left = 15;
-        var max_items_left = 29;
-        var remaining_items = randomIntFromInterval(min_items_left, max_items_left);
-        var min_of_remaining_items = 1;
-        var decrease_after = 1.9;
-        var decrease_after_first_item = 0.12;
-
-
- 
-        // Davy Jones' Locker
-        (function($) {
-            $.fn.progressbar = function() {
-                var a = "<p>Hurry! Only <span class='count'>" + remaining_items + "</span> left in stock.</p>" + "<div class='progressbar'><div style='width:100%'></div></div>";
-                this.addClass('items-count');
-                this.html(a + this.html());
-                updateMeter(this);
-                var b = this;
-                setTimeout(function() {
-                    remaining_items--;
-                    if (remaining_items < min_of_remaining_items) {
-                        remaining_items = randomIntFromInterval(min_items_left, max_items_left)
-                    }
-                    $('.count').css('background-color', '#CE0201');
-                    $('.count').css('color', '#fff');
-                    setTimeout(function() {
-                        $('.count').css('background-color', '#fff');
-                        $('.count').css('color', '#CE0201')
-                    }, 1000 * 60 * 0.03);
-                    b.find(".count").text(remaining_items);
-                    updateMeter(b)
-                }, 1000 * 60 * decrease_after_first_item);
-                setInterval(function() {
-                    remaining_items--;
-                    if (remaining_items < min_of_remaining_items) {
-                        remaining_items = randomIntFromInterval(min_items_left, max_items_left)
-                    }
-                    $('.count').css('background-color', '#CE0201');
-                    $('.count').css('color', '#fff');
-                    setTimeout(function() {
-                        $('.count').css('background-color', '#fff');
-                        $('.count').css('color', '#CE0201')
-                    }, 1000 * 60 * 0.03);
-                    b.find(".count").text(remaining_items);
-                    updateMeter(b)
-                }, 1000 * 60 * decrease_after)
-            };
-
-            function updateMeter(a) {
-                var b = 100 * remaining_items / total_items;
-                if (remaining_items < 10) {
-                    a.find('.progressbar div:first').addClass('less-than-ten')
-                }
-                a.find('.progressbar').addClass('active progress-striped');
-                setTimeout(function() {
-                    myanimate(a.find('.progressbar div:first'), b);
-                    a.find('.progressbar').removeClass('active progress-striped')
-                }, 1000)
-            }
-        }(jQuery));
-
-        function myanimate(a, b) {
-            var c = 0;
-            var d = parseInt(a.closest('.progressbar').css('width'));
-            var e = Math.floor(100 * parseInt(a.css('width')) / d);
-            if (e > b) {
-                c = e
-            }
-
-            function frame() {
-                if (e > b) {
-                    c--
-                } else {
-                    c++
-                }
-                a.css('width', c + '%');
-                if (c == b || c <= 0 || c >= 100) clearInterval(f)
-            }
-            var f = setInterval(frame, 40)
-        }
-        
-        jQuery.noConflict()(function($) {
-            $(document).ready(function() {
-                $("#progress_bar").progressbar();
-                var tag = "ctdn-12-12".match(/\d+/g);
-                var hour = 14;
-                var theDaysBox = $("#numdays");
-                var theHoursBox = $("#numhours");
-                var theMinsBox = $("#nummins");
-                var theSecsBox = $("#numsecs");
-                var d = new Date();
-                var n = d.getDay();
-                var date = 1;
-                var gg = 0;
-                var hh = 0;
-                var ii = 0;
-                var nsec = 0 - d.getSeconds();
-                if (nsec < 0) {
-                    nsec = 60 - d.getSeconds();
-                    gg = 1
-                }
-                var nmin = 0 - d.getMinutes() - gg;
-                if (nmin < 0) {
-                    nmin = 60 - d.getMinutes() - gg;
-                    hh = 1
-                }
-                var nhrs = 14 - d.getHours() - hh;
-                if (nhrs < 0) {
-                    nhrs = 38 - d.getHours() - hh;
-                    ii = 1
-                }
-                var ndat = date - 1;
-                if (ndat < 0) {
-                    var mmon = d.getMonth();
-                    ndat = 30 + date - d.getDate() - ii
-                }
-                theSecsBox.html(nsec);
-                theMinsBox.html(nmin);
-                theHoursBox.html(nhrs);
-                theDaysBox.html(ndat);
-                var refreshId = setInterval(function() {
-                    var e = theSecsBox.text();
-                    var a = theMinsBox.text();
-                    var c = theHoursBox.text();
-                    var b = theDaysBox.text();
-                    if (e == 0 && a == 0 && c == 0 && b == 0) {} else {
-                        if (e == 0 && a == 0 && c == 0) {
-                            theDaysBox.html(b - 1);
-                            theHoursBox.html("23");
-                            theMinsBox.html("59");
-                            theSecsBox.html("59")
-                        } else {
-                            if (e == 0 && a == 0) {
-                                theHoursBox.html(c - 1);
-                                theMinsBox.html("59");
-                                theSecsBox.html("59")
-                            } else {
-                                if (e == 0) {
-                                    theMinsBox.html(a - 1);
-                                    theSecsBox.html("59")
-                                } else {
-                                    theSecsBox.html(e - 1)
-                                }
-                            }
-                        }
-                    }
-                }, 1000);
-            });
-        });
-    </script>
+    <script type="text/javascript" src="./ProgressScript.js"></script>
     <div class="items-count" id="progress_bar"></div>
     <!--
     <div id="clock-ticker" class="clearfix">
@@ -674,23 +598,399 @@ html {
 
     <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v7.0&appId=1720685744617920&autoLogAppEvents=1" nonce="C5FzbTEB"></script>
 
-    <script>window.twttr = (function(d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0],
-          t = window.twttr || {};
-        if (d.getElementById(id)) return t;
-        js = d.createElement(s);
-        js.id = id;
-        js.src = "https://platform.twitter.com/widgets.js";
-        fjs.parentNode.insertBefore(js, fjs);
-      
-        t._e = [];
-        t.ready = function(f) {
-          t._e.push(f);
-        };
-      
-        return t;
-      }(document, "script", "twitter-wjs"));</script>
+    <script src="./Twitter.js"></script>
+<!-- PopUp Notification html -->
+<ul class="custom-social-proof">
+ <li class="noti noti1">
+    <div class="custom-notification">
+      <div class="custom-notification-container">
+        <div class="custom-notification-image-wrapper">
+          <img src="https://www.google.com/maps/vt/data=u1K_PgEoHbVR471s360uHTHvOyBzr29IHRXBeBPBY2yiK4frhBzdcO98Rj06RNEOjX91E6BluQykvACBydADqgGzbbdjGGOWdtXf-U6iXsRIM-Jo_YK7eEEHj-8ThfL8I4pQetMqRu7uGQsHChvXMGCJL5ssQ3zwsNm3tD0lwdPaAGeKXZtqZB_I3Ll3CWEo3Mg9HEyPt_6ObyjKO19cS_z25Y0b5fMtPmrkin11wa0o_t2KaZ9bb6avySXB88WJ">
+        </div>
+        <div class="custom-notification-content-wrapper">
+          <p class="custom-notification-content">
+            Tom A. Gilbert<br>From: <b>Racine, WI</b> Signed Up   
+            <small>Just Now</small>
+          </p>
+        </div>
+      </div>
+      <div class="custom-close"></div>
+    </div>
+</li>
 
+<li class="noti noti2">
+    <div class="custom-notification">
+      <div class="custom-notification-container">
+        <div class="custom-notification-image-wrapper">
+          <img src="https://www.google.com/maps/vt/data=8gTOVZJFLh-Do4dVWZDk9zjBib6c7td_G9r0IhrEEoiuo7X0--OHJDGoxipifDJd74NTSVso3tb6VsRl_OWxn910WAMinLH3csEXksfn_qlOAcL7FcKwR1Q8XYVGHcs9xukUKXh_eJHZv9EVxF5E55R8LnGVADtx_RGfdMzZHldxkKrzYmlMa4yiKJDCjSzr2CQwgl69N4OOKRCzAbH-WQPvcI1a5SYQJwcq4x64I6BBEVTcdmjxCIYD4TN79n2FkQ">
+        </div>
+        <div class="custom-notification-content-wrapper">
+          <p class="custom-notification-content">
+            Antonio G. Wallace<br>From: <b>North Hollywood, CA</b> Signed Up   
+            <small>Just Now</small>
+          </p>
+        </div>
+      </div>
+      <div class="custom-close"></div>
+    </div>
+</li>
+                               
+<li class="noti noti3">
+
+    <div class="custom-notification">
+      <div class="custom-notification-container">
+        <div class="custom-notification-image-wrapper">
+          <img src="https://www.google.com/maps/vt/data=WbfaH5Jhk4Ca-7b5rOyd7okImoe3X2-Njb_BOOh_4n_LIaFueQUf-qLML0f-cKT6iLhXWT9UqlK2ej55uC7_pWe43i-iyVju2YLmC3R5rNPz_CDkYighAmRuQE0gq7wtJjdd4FDQUI6-JW3aGfjnWrHYGgK_YWMcZr20qnBWyomVQPQEcvRZc6p_3f-ZhtnTd7kYK5lGvcVSY7HkqeaWStrAi5mm601JGGo3S-ij70nOJlvzUDhApKafnLdDjbhN">
+        </div>
+        <div class="custom-notification-content-wrapper">
+          <p class="custom-notification-content">
+            Vanessa J. Cooper<br>From: <b>Baltimore, MD</b> Signed Up   
+            <small>Just Now</small>
+          </p>
+        </div>
+      </div>
+      <div class="custom-close"></div>
+    </div></li>
+                               
+                               <li class="noti noti4">
+
+    <div class="custom-notification">
+      <div class="custom-notification-container">
+        <div class="custom-notification-image-wrapper">
+          <img src="https://www.google.com/maps/vt/data=KkPiWzRHYviS16JUobW9kb0cIYuy2N0qZDb2L_u8Q_veXpANOqGfc1Xl64oHVRXjR0mouPHXK8QLKamu9cM29nOaHw8Pz0RFCvGQhTArfkHoh-FNhqW2ri1EerW_VupSqP7tCAOyiwSZ0HlOiV0M9owSsQBYDvgGQ9unDtCXvDae_8n31sBPRN63X661j-ZoOI-yDTeh7RDGbIREtScfHvvrQLoPNXmH-UFerA7suGwBiNkY6KT_BntQDxcRE4Rr9Q">
+        </div>
+        <div class="custom-notification-content-wrapper">
+          <p class="custom-notification-content">
+            Angela T. Crawford<br>From: <b>Dana, IN</b> Signed Up   
+            <small>Just Now</small>
+          </p>
+        </div>
+      </div>
+      <div class="custom-close"></div>
+    </div></li>
+  <li class="noti noti5">
+
+    <div class="custom-notification">
+      <div class="custom-notification-container">
+        <div class="custom-notification-image-wrapper">
+          <img src="https://www.google.com/maps/vt/data=3wildbQo-s_GDkYf8SGG_r17yDDKqLQetpvMOTO8QgusXbFq-4d8f1ccdO1arY2rQgLgKN5vt1mfoVQ2jEV-TF-znZpHjaL15c18ElBULCcva4F_UA2HBlePvBwB4YvlHKn7Nyi5NCxQSqDdxKhI7SPa0T_j2PjNcmtHaYC06bDCqhVK97gaWlfYbhXVARSVdDpUknhR_KnotBHCgzBulwjI5gP4kp-QFXRGJx5pieoNdWAzkHX3-evC7_HMGvjApg">
+        </div>
+        <div class="custom-notification-content-wrapper">
+          <p class="custom-notification-content">
+            Dawn P. Weldon<br>From: <b>Knoxville, TN</b> Signed Up   
+            <small>Just Now</small>
+          </p>
+        </div>
+      </div>
+      <div class="custom-close"></div>
+    </div></li>
+  <li class="noti noti6">
+
+    <div class="custom-notification">
+      <div class="custom-notification-container">
+        <div class="custom-notification-image-wrapper">
+          <img src="https://www.google.com/maps/vt/data=enN4sxiW7DEhQDHF-1Wf93GlI8X2889d3dBNgn3lu92kp7pMPUI8qk8IeU1shvO3HC-eYuf31xF8lnueoAUcWen8Pm7C6uZH4U2tHdNc2neGixf8w5eAhtPt_lsO6FSksHnurouKXuYbiRB0h6uj6PfRCHdcYQdAcNz2FK8IKkK56ScQku6marhGkF7ZueMvugE8YBh39vZI84ydMByd5Q9K__ql0Lkvz_idcX40LqW7Pv7DEYX0pxmc0B0M7c9UEA">
+        </div>
+        <div class="custom-notification-content-wrapper">
+          <p class="custom-notification-content">
+            Gerald L. Vezina<br>From: <b>Granbury, TX</b> Signed Up   
+            <small>Just Now</small>
+          </p>
+        </div>
+      </div>
+      <div class="custom-close"></div>
+    </div></li>
+  <li class="noti noti7">
+
+    <div class="custom-notification">
+      <div class="custom-notification-container">
+        <div class="custom-notification-image-wrapper">
+          <img src="https://www.google.com/maps/vt/data=U6WJty7vTD46ngGQKQcuR5zsX7YPmNQMc3AYoVJ7znHM1k851IkqceM6bipNeFmz5mg5yivKNdFG3swsSUHUvgD1-c7ALEw3z2EnlLqsa7f2glZQNpVBLXlkXLpZJzBIdwjYwnEBKf8iqWeqPcBFyBz0DFxZz4BOHyCnsComP_Wt2j-sybJi11Ip5qS8r7LVqucCUXuJtXXROpAaQY0mA19k2d4dgf9Cp6AkqA__COtxT9PuOW36xt3WG0SV0KsO4Q">
+        </div>
+        <div class="custom-notification-content-wrapper">
+          <p class="custom-notification-content">
+            Margie A. Henkel<br>From: <b>Birmingham, AL</b> Signed Up   
+            <small>Just Now</small>
+          </p>
+        </div>
+      </div>
+      <div class="custom-close"></div>
+    </div></li>
+  <li class="noti noti8">
+
+    <div class="custom-notification">
+      <div class="custom-notification-container">
+        <div class="custom-notification-image-wrapper">
+          <img src="https://www.google.com/maps/vt/data=s6ablf1wVX2tjrSynG1RIs8rHlqCXL1wBc8msSEZQHlwRfHwFrW-BNfRSm2G2_823j1dkejOXj6nt3noES9IkXFuykbULc1chcevSJ6POFqOml6VX_NsYN7aqO2ys_2MBoFSmxdS867x6KWATavtm_DDsjWiMdz04IYi1GVJ5I6oj0yAax8mntRzWYkY3GOnk6mhmW_dlwxyqM3TMJU5DF2_3TXdJPYkLRTcZTPwBUteZeuyZtrVplFJBIiGz3n9-A">
+        </div>
+        <div class="custom-notification-content-wrapper">
+          <p class="custom-notification-content">
+            Ignacio K. Thomas<br>From: <b>Seattle, WA</b> Signed Up  
+            <small>Just Now</small>
+          </p>
+        </div>
+      </div>
+      <div class="custom-close"></div>
+    </div></li>
+  <li class="noti noti9">
+
+    <div class="custom-notification">
+      <div class="custom-notification-container">
+        <div class="custom-notification-image-wrapper">
+          <img src="https://www.google.com/maps/vt/data=2Q1VOmIlnwobLsLzq6Bo1823CX-m872q-wrfuKSw-knyU32ERqWsxgbKjcc_6agKXGL6iV110feLO3dRdYRAeuHagaTh6yrq86ciP6yEf_Ma2HXIwar8osptTstmMJovMpOPWtKS9zwdvtebPHH1Pw2rJ_LWOrYCsKM5b3u--T52KVJMX66FToXEuGlvXdbRBkuuHKNJRLOKW7EN5w789Iyews8qIVFSSjzeqwSm3kmD1Z3sKu8jUL8m0mmPMgRdZw">
+        </div>
+        <div class="custom-notification-content-wrapper">
+          <p class="custom-notification-content">
+            Donna R. Dixon<br>From: <b>New York, NY</b> Signed Up   
+            <small>Just Now</small>
+          </p>
+        </div>
+      </div>
+      <div class="custom-close"></div>
+    </div></li>
+  <li class="noti noti10">
+
+    <div class="custom-notification">
+      <div class="custom-notification-container">
+        <div class="custom-notification-image-wrapper">
+          <img src="https://www.google.com/maps/vt/data=zMB7StpToMXe5wWmCDymhquP45AfjrABg_l9xvaiYBOqtNxcnDoXtrhOZfyPdWr2eKPOZQs7YBo8Ea5tsZTjiMGj9d8PMGiYgb6eQSGPQgpgWHCdx0l_7qw_ZmcZkb8aRqSJOiC096a2JBEmqWlv2vAlLZOMxPi_ZivsykTeNu0n-hkU0-xySzxnzwdrYcxLelJ8yMds6PpTv1lQsoCO5lpeo55Rhi4CB9P9xUT-Ivo1LYCj4BI6Wqgn65Z2wR_6fw">
+        </div>
+        <div class="custom-notification-content-wrapper">
+          <p class="custom-notification-content">
+            Clarence J. Diggs<br>From: <b>Shaker Heights, OH</b> Signed Up   
+            <small>Just Now</small>
+          </p>
+        </div>
+      </div>
+      <div class="custom-close"></div>
+    </div></li>
+  <li class="noti noti11">
+
+    <div class="custom-notification">
+      <div class="custom-notification-container">
+        <div class="custom-notification-image-wrapper">
+          <img src="https://www.google.com/maps/vt/data=VLC4EmkU4yYFE80DyHKVCLvIjj6erMbNdLfsp0w8EN1ML988OZB5c8IG5RuPgHYvnTetWqBwJQO83SLeyva0J-XTzVByGTDSf_TgqPGFoygBrvGRZPrwEB8BoLfi74nxmbPzqqCMzVWgEJVx8zc2kikUAsbqmbO0T9W3caAHeRc5iWmfXsrOPPMguBIOLL8EVpabO__dPq_Vo02tfOCBSqroq4fCvDrpX6ZqJ8K0DZCtEgnEJmdJYJZQbWCuuRYVCQ">
+        </div>
+        <div class="custom-notification-content-wrapper">
+          <p class="custom-notification-content">
+            Andre L. Holliday<br>From: <b>Los Angeles, CA</b> Signed Up   
+            <small>Just Now</small>
+          </p>
+        </div>
+      </div>
+      <div class="custom-close"></div>
+    </div></li>
+  <li class="noti noti12">
+
+    <div class="custom-notification">
+      <div class="custom-notification-container">
+        <div class="custom-notification-image-wrapper">
+          <img src="https://www.google.com/maps/vt/data=ejSa7DIKQjZaFbJgT6GJXZwQKasgt3DIThGJ60NtD4kvR5V7WLEdZWbksEbwlmdF8nVf31JxQ9q0tfkHrcDgtxrN0bY7PCbEeZLsjAaqyaBVEN4rwvUdTu7i5bCf2QtLfNarr05jEochAedmB6Auug">
+        </div>
+        <div class="custom-notification-content-wrapper">
+          <p class="custom-notification-content">
+            Lawrence D. McConnell<br>From: <b>Rancho Dominguez, CA</b> Signed Up   
+            <small>Just Now</small>
+          </p>
+        </div>
+      </div>
+      <div class="custom-close"></div>
+    </div></li>
+  <li class="noti noti13">
+
+    <div class="custom-notification">
+      <div class="custom-notification-container">
+        <div class="custom-notification-image-wrapper">
+          <img src="https://www.google.com/maps/vt/data=7UJ5irJuB708x1cVjs-KS3TNn0Abw7jaw-gDI1KUw58_9FVN4IwfUFUqWBoH75YlZ0Zp0GfGQSE4xl3wnZHM0LdWHzC6xAfK4bQVK9b4_cz4E6elrq-nnqtZpz4d9jA_TN-roPT-OEVxKu2ugRzzk6HPvNLXTfvrl_atbaKV3k4MftwFu8uvwRlWihuPVmVywTv3zJsRdC9EhcsWpZUQjeziWEfAsFN-mUcYWr5QYeHi67MNX6xNo58404I_viiHwg">
+        </div>
+        <div class="custom-notification-content-wrapper">
+          <p class="custom-notification-content">
+            Kurt W. Lang<br>From: <b>Pomona, CA</b> Signed Up   
+            <small>Just Now</small>
+          </p>
+        </div>
+      </div>
+      <div class="custom-close"></div>
+    </div></li>
+  <li class="noti noti14">
+
+    <div class="custom-notification">
+      <div class="custom-notification-container">
+        <div class="custom-notification-image-wrapper">
+          <img src="https://www.google.com/maps/vt/data=jei8WVQCXt5xcKDFWj9nkGo9XRJ3Gu6iKU3Btq4TASi-Z0fuJtSsDuePS5HDRMTv3V5vloIMrtMKBPeGuVHLGuibZ0YCiKKfAh0Cso8wErVAQEzDphJgQgnuXe2fojLD-EUQuBCcbIfCgQb82ZZYmtNUNOFRus4GPFCTuYzIEKZKD7fv6tZcjZLPsHqc1qG9ZbCHNn9WVWkcuQdvL_a8tgwawijAeAAjTjkRYqWIDAIK_XrQAOahMKKRln9CvMD21g">
+        </div>
+        <div class="custom-notification-content-wrapper">
+          <p class="custom-notification-content">
+            Mirna T. Silva<br>From: <b>Fresno, CA</b> Signed Up  
+            <small>Just Now</small>
+          </p>
+        </div>
+      </div>
+      <div class="custom-close"></div>
+    </div></li>
+  <li class="noti noti15">
+
+    <div class="custom-notification">
+      <div class="custom-notification-container">
+        <div class="custom-notification-image-wrapper">
+          <img src="https://www.google.com/maps/vt/data=owbGc47obPhS1rrOhjqOJmerbQji_HhReRqJROrfmCxyk9v3uyewiTaroDwK7Q0szRTMkRB_K8LrXH_no0A29T3AaN0c9IEj_4dvn8nQB5XEmb9XTEETQjwqO_OiYSOP0QDHHakzyuQW27HcOQOs6p6MXKjYLUvVIudTXQsKrCnNx5OLfFdbU7RmxOe6jZuteNUhNCu7kMk7kB-HO6q4f_pNqB5ev_zxI9ib5iJcbIY4T5B-zlbgIFe5ZzuGPkaouA">
+        </div>
+        <div class="custom-notification-content-wrapper">
+          <p class="custom-notification-content">
+            Edward G. Garner<br>From: <b>Klamath, CA</b> Signed Up   
+            <small>Just Now</small>
+          </p>
+        </div>
+      </div>
+      <div class="custom-close"></div>
+    </div></li>
+  <li class="noti noti16">
+
+    <div class="custom-notification">
+      <div class="custom-notification-container">
+        <div class="custom-notification-image-wrapper">
+          <img src="https://www.google.com/maps/vt/data=owbGc47obPhS1rrOhjqOJmerbQji_HhReRqJROrfmCxyk9v3uyewiTaroDwK7Q0szRTMkRB_K8LrXH_no0A29T3AaN0c9IEj_4dvn8nQB5XEmb9XTEETQjwqO_OiYSOP0QDHHakzyuQW27HcOQOs6p6MXKjYLUvVIudTXQsKrCnNx5OLfFdbU7RmxOe6jZuteNUhNCu7kMk7kB-HO6q4f_pNqB5ev_zxI9ib5iJcbIY4T5B-zlbgIFe5ZzuGPkaouA">
+        </div>
+        <div class="custom-notification-content-wrapper">
+          <p class="custom-notification-content">
+            Edward G. Garner<br>From: <b>Klamath, CA</b> Signed Up   
+            <small>Just Now</small>
+          </p>
+        </div>
+      </div>
+      <div class="custom-close"></div>
+    </div></li>
+  <li class="noti noti17">
+
+    <div class="custom-notification">
+      <div class="custom-notification-container">
+        <div class="custom-notification-image-wrapper">
+          <img src="https://www.google.com/maps/vt/data=2Q1VOmIlnwobLsLzq6Bo1823CX-m872q-wrfuKSw-knyU32ERqWsxgbKjcc_6agKXGL6iV110feLO3dRdYRAeuHagaTh6yrq86ciP6yEf_Ma2HXIwar8osptTstmMJovMpOPWtKS9zwdvtebPHH1Pw2rJ_LWOrYCsKM5b3u--T52KVJMX66FToXEuGlvXdbRBkuuHKNJRLOKW7EN5w789Iyews8qIVFSSjzeqwSm3kmD1Z3sKu8jUL8m0mmPMgRdZw">
+        </div>
+        <div class="custom-notification-content-wrapper">
+          <p class="custom-notification-content">
+            Selina G. Nelson<br>From: <b>New York, NY</b> Signed Up   
+            <small>Just Now</small>
+          </p>
+        </div>
+      </div>
+      <div class="custom-close"></div>
+    </div></li>
+  <li class="noti noti18">
+
+    <div class="custom-notification">
+      <div class="custom-notification-container">
+        <div class="custom-notification-image-wrapper">
+          <img src="https://www.google.com/maps/vt/data=8dZayyiRTFSxoIQjTzypWUigdSNCX1MEve9P7QsOy3ULQf0OGrDt7HO22RrmPl188T1V5CIP7MkLCteIPz6WBvpqbL70ol0u2vVSWwYLfFKjTPe37L5p8Lcvru_S6CUjh0gPzG66ptlUmriA5gqyo9UqYVQtV7kima5jM4aaa8vFnP_lbDCTKHLanJgpiRBU5JDa6w09BmrTtEFct9BZlucK4P5B8niBvkcMbvCocWKHjqo9Vo_-IIejVjeGeuMUHg">
+        </div>
+        <div class="custom-notification-content-wrapper">
+          <p class="custom-notification-content">
+            Philip P. Thompson<br>From: <b>Camden, NJ</b> Signed Up   
+            <small>Just Now</small>
+          </p>
+        </div>
+      </div>
+      <div class="custom-close"></div>
+    </div></li>
+  <li class="noti noti19">
+
+    <div class="custom-notification">
+      <div class="custom-notification-container">
+        <div class="custom-notification-image-wrapper">
+          <img src="https://www.google.com/maps/vt/data=e5rEK_3v0rVnbOxAksT08QJ4FYZQp8UFHUUmDR0VrhfK3bAhPmiiGa1le049TuiDuVGOmo1gueldZ5qw_vn3HEBsa2im4QOvK07llJdaxuWtFgBeuPSimSdY-1cgT__kAqdS0Z-gElxVJdZc50MTK9dR9EIHQz5GIRTfN2DguSwrtMq2LDM_aB7TWwGvoVd8piNm_RjRuwwUYSJGjDvd1wU1Vje-m2EKmIhjGT5RabWqR9Vlr1zVpYllgB9k3AZhaw">
+        </div>
+        <div class="custom-notification-content-wrapper">
+          <p class="custom-notification-content">
+            Jason N. Bentley<br>From: <b>Metuchen, NJ</b> Signed Up   
+            <small>Just Now</small>
+          </p>
+        </div>
+      </div>
+      <div class="custom-close"></div>
+    </div></li>
+  <li class="noti noti20">
+
+    <div class="custom-notification">
+      <div class="custom-notification-container">
+        <div class="custom-notification-image-wrapper">
+          <img src="https://www.google.com/maps/vt/data=SQdGE9uC_ZuQkg3c_dL5N0EdXLvPArEuDQhe-4e4-zzpmqVYh-hMPy7iAxcOoQMzspktcSkpISvEZRCcq8CPmroI1eMsd_2TcMAkMfoQHsVP8HyQn57xY8c7yq-2C7Ev5WcSRQ4XkovxBMbtaXqAI45C8qKAqAprkyx7pK3ium56MGoqsB8KFaRsh7XQBx9gNtWnJWqD4hlok2P1ka7UQg5OZ3ClfW3A8oKAfHOmkMhTjxRo9AEee78q755iNxCuoQ">
+        </div>
+        <div class="custom-notification-content-wrapper">
+          <p class="custom-notification-content">
+            Russell T. Copeland<br>From: <b>Providence, RI</b> Signed Up   
+            <small>Just Now</small>
+          </p>
+        </div>
+      </div>
+      <div class="custom-close"></div>
+    </div></li>
+  <li class="noti noti21">
+
+    <div class="custom-notification">
+      <div class="custom-notification-container">
+        <div class="custom-notification-image-wrapper">
+          <img src="https://www.google.com/maps/vt/data=shLQd_QiW0OE-kZrFLFyGZE7RXIGmuctvQKGLwsedYNqCDzuDACAeV6tMUooar4H6-qg9BwkxHTNrb1HAmMCy-I3zitoWPdi19opN8N_ZXsB4smuzg8r0oJa_7v3WEgmnr8YZwsy25rUiLhcX6ookmCqkkooSmrYj8CBMgOYxk2q3C3pUlKpfogt8_XchkxfUiqsLY-wcKM6-SY24TdifXKAEds4E3ytul5HBX7rZrVhYPuCXFzx2I1IerubpsvlUg">
+        </div>
+        <div class="custom-notification-content-wrapper">
+          <p class="custom-notification-content">
+            John L. Crowe<br>From: <b>Dallas, TX </b> Signed Up  
+            <small>Just Now</small>
+          </p>
+        </div>
+      </div>
+      <div class="custom-close"></div>
+    </div></li>
+  <li class="noti noti22">
+
+    <div class="custom-notification">
+      <div class="custom-notification-container">
+        <div class="custom-notification-image-wrapper">
+          <img src="https://www.google.com/maps/vt/data=LEtEVrYKFxkfldp87j6u7mRVKGcLRiA2nKNTjrr1asqw5D40Y0vUREgg-fERhomlfO_JsWY1W5KcHecqBtSqQnLFFGjqtWW4920wKsgPUrRzF61SjNU8HpEyg7TLnUK6Ams476aX5sbXKeb-ybGyUt7dUwUniqkeg3haaXtUL3OyhyZZ8R2WdqtRII7xe3sxMWWtrVPe0MUJe0beJ_QJLWSgEBHtoSyNoxoHTT7CpzQjL_Bihjcj4O9iLR_VDFmeqg">
+        </div>
+        <div class="custom-notification-content-wrapper">
+          <p class="custom-notification-content">
+            Kevin F. Deluca<br>From: <b>Pittsburgh, PA</b> Signed Up   
+            <small>Just Now</small>
+          </p>
+        </div>
+      </div>
+      <div class="custom-close"></div>
+    </div></li>
+  <li class="noti noti23">
+
+    <div class="custom-notification">
+      <div class="custom-notification-container">
+        <div class="custom-notification-image-wrapper">
+          <img src="https://www.google.com/maps/vt/data=zFTHDc8t53En-bkKrtzAnOFo6HqsmPdglctZIDDo5lt8evrkYcR3k0OsJEmiK7Q68vhCFIpoiI-YsXDLdxFs85r6ZQiuXtb1ekR1rQ5KxGlmsHLuRCNfpKQs3AUoENJ6mlYv18jcbrPlwblbPrifIW8XxWSnkBzGaQbjQ8JiIMFe58t_2NnU1u7CX5qOtJpa--vaDpA-xpVsh_8Cdtvn7WtSoYyC-YsgwDuPOorwOuoYqN6hZceaThPL08A3PXAQhg">
+        </div>
+        <div class="custom-notification-content-wrapper">
+          <p class="custom-notification-content">
+            Danica J. Bolton<br>From: <b>Rushville, IN</b> Signed Up   
+            <small>Just Now</small>
+          </p>
+        </div>
+      </div>
+      <div class="custom-close"></div>
+    </div></li>
+  <li class="noti noti24">
+
+    <div class="custom-notification">
+      <div class="custom-notification-container">
+        <div class="custom-notification-image-wrapper">
+          <img src="https://www.google.com/maps/vt/data=_AUZWIjwmynX4Qcn8Ob-vK37CCOsllivmXqjIH5L0OslYf1OAseMo32HDod2AcDk2Us5_uEY8m2NtCxZCadD7Q-390iA9OYfkevyWVNIw6f2V7If3RFLFbnEtp9iRJRFczEnvP6_KaF61N0qr9Lq_4Fz9nlLwqv0-fWTkJqLZC_V3GHdkRiPLEZyDcfZzAZv43yqGqwpJKOFwz8aDqszkpl3E6IlHRqc3trtI0CFH8V5yIwZ4ZMrHQpmJhLlQI5uJg">
+        </div>
+        <div class="custom-notification-content-wrapper">
+          <p class="custom-notification-content">
+            Ronald K. Gonzalez<br>From: <b>Tacoma, WA</b> Signed Up   
+            <small>Just Now</small>
+          </p>
+        </div>
+      </div>
+      <div class="custom-close"></div>
+    </div></li>
+  </ul>
+<!-- partial -->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script><script  src="./PopUpscript.js"></script>
 
    
 </body>
