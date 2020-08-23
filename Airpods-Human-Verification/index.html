@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Human Verification</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <style>
+
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap');
+
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+
+        header, footer {
+            padding: 20px;
+            background-color: #022a51;
+            color: #ffffff;
+            text-align: center;
+        }
+
+        footer {
+            width: 85%;
+            margin: 0px auto;
+        }
+
+        footer a, footer p, {
+            margin: 0px;
+            display: inline-block;
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+
+        header h3, header div {
+            font-size: 20px;
+            margin: 0px;
+            display: inline-block;
+        }
+
+        section {
+            padding: 10px;
+            text-align: center;
+			
+        }
+
+        section p {
+            margin: 0px;
+            font-size: 18px;
+			text-align: center;
+        }
+
+        section h2 {
+            margin: 0px;
+            font-size: 30px;
+        }
+
+        section h3 {
+            margin: 0px;
+            margin-bottom: 20px;
+        }
+
+        section h4 {
+            margin: 0px;
+            font-weight: 700;
+            font-size: 20px;
+        }
+
+        a, a:hover {
+            text-decoration: none;
+            color: inherit;
+        }
+		.top {
+		margin: 0px auto;
+		width: 75%;
+		background-color:#FFF7D6;
+		border:dotted;
+		}
+		
+		
+        .img-container {
+            width: 25%;
+            margin: 0px auto;
+            margin-top: 0px;
+			background-color:#135EC7;
+			border-radius:5px
+		}
+		
+
+        .img-container img {
+            width: 40%;
+			
+        }
+
+
+        .progress {
+            margin-bottom: 40px
+            display:inline;
+            height: 40px;
+			text-align: center;
+			vertical-align: middle;
+            horizotal-align: center;    
+             
+        }
+
+        .progress-bar {
+            font-size: 15px;
+			 
+        }
+
+        .buttons button {
+            position: relative;
+            width: 90%;
+            background-color: #022a51;
+            color: #ffffff;
+            padding-top: 20px;
+            font-size: 20px;
+            border: none;
+            border-radius: 5px;
+            overflow: hidden;
+	        }
+
+        .texts {
+		    margin: 0px auto;
+            width: 90%;
+        }
+
+        .fb_iframe_widget span 
+        {
+            vertical-align: baseline !important;
+        }
+
+			
+        @media (max-width: 576px) {
+
+            section {
+                padding-top: 20px;
+            }
+
+            section h2 {
+                font-size: 25px;
+            }
+
+            section h3 {
+                font-size: 20px;
+            }
+
+            .progress {
+                height: 40px;
+            }
+
+            .texts p {
+                font-size: 17px;
+            }
+			.top {
+			margin: 0px auto;
+			width: 90%;
+			
+				}
+		.img-container img {
+		width: 100%;
+		
+		}
+		
+        }
+		
+<!--Button Animation Starts #1785eb 50%, #1b80de -->
+html {
+  height: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.animated-button {
+  background: linear-gradient(-30deg, #1785eb 50%, #1b80de 50%);
+  padding: 20px 40px;
+  margin: 12px;
+  display: inline-block;
+  -webkit-transform: translate(0%, 0%);
+          transform: translate(0%, 0%);
+  overflow: hidden;
+  color: #d4e0f7;
+  font-size: 20px;
+  letter-spacing: 2.5px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  -webkit-box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+}
+
+.animated-button::before {
+  content: '';
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: #8592ad;
+  opacity: 0;
+  -webkit-transition: .2s opacity ease-in-out;
+  transition: .2s opacity ease-in-out;
+}
+
+.animated-button:hover::before {
+  opacity: 0.2;
+}
+
+.animated-button span {
+  position: absolute;
+}
+
+.animated-button span:nth-child(1) {
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 2px;
+  background: -webkit-gradient(linear, right top, left top, from(rgba(8, 20, 43, 0)), to(#2662d9));
+  background: linear-gradient(to left, rgba(8, 20, 43, 0), #2662d9);
+  -webkit-animation: 2s animateTop linear infinite;
+          animation: 2s animateTop linear infinite;
+}
+
+@-webkit-keyframes animateTop {
+  0% {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+  100% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+}
+
+@keyframes animateTop {
+  0% {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+  100% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+}
+
+.animated-button span:nth-child(2) {
+  top: 0px;
+  right: 0px;
+  height: 100%;
+  width: 2px;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(8, 20, 43, 0)), to(#2662d9));
+  background: linear-gradient(to top, rgba(8, 20, 43, 0), #2662d9);
+  -webkit-animation: 2s animateRight linear -1s infinite;
+          animation: 2s animateRight linear -1s infinite;
+}
+
+@-webkit-keyframes animateRight {
+  0% {
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+  }
+  100% {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+}
+
+@keyframes animateRight {
+  0% {
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+  }
+  100% {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+}
+
+.animated-button span:nth-child(3) {
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  height: 2px;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(8, 20, 43, 0)), to(#2662d9));
+  background: linear-gradient(to right, rgba(8, 20, 43, 0), #2662d9);
+  -webkit-animation: 2s animateBottom linear infinite;
+          animation: 2s animateBottom linear infinite;
+}
+
+@-webkit-keyframes animateBottom {
+  0% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+  100% {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+}
+
+@keyframes animateBottom {
+  0% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+  100% {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+}
+
+.animated-button span:nth-child(4) {
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 2px;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(8, 20, 43, 0)), to(#2662d9));
+  background: linear-gradient(to bottom, rgba(8, 20, 43, 0), #2662d9);
+  -webkit-animation: 2s animateLeft linear -1s infinite;
+          animation: 2s animateLeft linear -1s infinite;
+}
+
+@-webkit-keyframes animateLeft {
+  0% {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+  100% {
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+  }
+}
+
+@keyframes animateLeft {
+  0% {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+  100% {
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+  }
+}
+
+<!--Button Animation Ends-->
+
+   
+   </style>
+
+    
+
+</head>
+<body>
+
+    <header>
+        <h2>Congratulations, You Successfully Secure your Spot!</h2> <div style="margin-left: 10px;"></div>
+    
+    </section>
+	</header>
+<div class="progress">
+            <div class="progress-bar progress-bar-warning progress-bar-striped active" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:100%"><p style="font-size: 15px; padding: 10px;">
+		
+
+			</div>
+      </div>
+    <section class="top">
+        
+          <p>
+		  Due to large amount of duplicate entries and abuse of our giveaways with programmed robot software, you are required to complete <b>Human Verification</b> by clicking a button below:
+		  </p>
+		  <h5 style="text-align:center;">  <b>Note:</b> Your application will not be submited untill you complete human verification! 
+</h5>
+			
+        </div>
+    </section>
+
+    <section class="middle" style="padding-top: 20px;">
+       		<section class="texts" style="padding-top: 0px;">
+       You have <div style="display:inline; font-weight:bold; margin-bottom: 20px" id="timer"></div> to complete human verification or your spot will be given to someone else.
+
+ 
+
+<!-- Button Code Stats Here-->
+    <section class="buttons" style="padding-top: 0px; ">
+
+         <a class="animated-button"; href="https://afflat3e1.com/lnk.asp?o=18691&c=918277&a=348769&k=DB901D38C649BCE5CDEC4ED0B2300306&l=19870" target="_blank";>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+			
+			<h4> Finish Registration!</h4>
+            <p>*Verify Now*</p></a>
+              
+<!-- Button Code Ends Here-->
+<!--PopUnder Starts Here -->
+<!-- Modify this according to your requirement -->
+
+<!-- JavaScript part -->
+<script type="text/javascript">
+    
+    // Total seconds to wait
+    var seconds = 6;
+    
+    function countdown() {
+        seconds = seconds - 1;
+        if (seconds < 0) {
+            // Chnage your redirection link here
+            window.location = "https://mysweetsweepstakes.groovepages.com/sweepstakeswall/";
+        } else {
+            // Update remaining seconds
+            document.getElementById("countdown").innerHTML = seconds;
+            // Count down using javascript
+            window.setTimeout("countdown()", 1000);
+        }
+    }
+    
+    // Run countdown function
+    countdown();
+    
+</script>
+<!-- PopUnder Ends Here -->
+ 
+<ul style="padding-top:25px; margin: 0px auto; width: 75%; text-align:center">
+  WIN APPLE AIRPODS AFTER COMPLETING HUMAN VERIFICATION: Click on Finish Registration BUTTON & Enter Your Contact Information. We Will Ask to Confirm Your Email Address, Enter Your Name, Age, Gender, Address and Phone Number. Why we Need Your Contact information? All this needed because when you win the prize, then we know you already qualify, we can contact you, and even surprise you at your home! Prize Covored by:
+</ul>
+
+	
+        
+
+</div>
+
+    </section>
+	<div class="img-container">
+	<p style="text:bold; color:white;">Yousweeps.com</p>
+	</div>
+	
+<!-- Timer Code Starts Here -->
+<script type="text/javascript">
+    var timeoutHandle;
+    function countdown(minutes, seconds) {
+        function tick() {
+            var counter = document.getElementById("timer");
+            counter.innerHTML =
+                minutes.toString() + ":" + (seconds < 10 ? "0" : "") + String(seconds);
+            seconds--;
+            if (seconds >= 0) {
+                timeoutHandle = setTimeout(tick, 1000);
+            } else {
+                if (minutes >= 1) {
+                   
+                    setTimeout(function () {
+                        countdown(minutes - 1, 59);
+                    }, 1000);
+                }
+            }
+        }
+        tick();
+    }
+
+    countdown(12, 54);
+
+</script>
+
+     
+</body>
+</html>
