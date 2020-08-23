@@ -171,24 +171,22 @@
 		
         }
 		
-<!--Button Animation Stats-->
+<!--Button Animation Starts-->
 html {
   height: 100%;
-  display: inline-block;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 
-.animated-button {
-  background: linear-gradient(-30deg, #0b1b3d 50%, #08142b 50%);
-  border-radius: 5px;
-  padding: 20px;
+.animated-button2 {
+  background: linear-gradient(-30deg, #fc9d0d 50%, #FF9900 50%); 
+  padding: 20px 40px;
   margin: 12px;
   display: inline-block;
   -webkit-transform: translate(0%, 0%);
           transform: translate(0%, 0%);
   overflow: hidden;
-  color: #d4e0f7;
+  color: #f7e6d4;
   font-size: 20px;
   letter-spacing: 2.5px;
   text-align: center;
@@ -198,48 +196,36 @@ html {
           box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
 }
 
-.animated-button::before {
+.animated-button2::before {
   content: '';
   position: absolute;
   top: 0px;
   left: 0px;
   width: 100%;
   height: 100%;
-  background-color: #022a51;
+  background-color: #ad9985;
   opacity: 0;
   -webkit-transition: .2s opacity ease-in-out;
   transition: .2s opacity ease-in-out;
 }
 
-.animated-button:hover::before {
+.animated-button2:hover::before {
   opacity: 0.2;
 }
 
-.animated-button span {
+.animated-button2 span {
   position: absolute;
-  
 }
 
-.animated-button span:nth-child(1) {
+.animated-button2 span:nth-child(1) {
   top: 0px;
   left: 0px;
   width: 100%;
   height: 2px;
-  background: -webkit-gradient(linear, right top, left top, from(rgba(8, 20, 43, 0)), to(#2662d9));
-  background: linear-gradient(to left, rgba(8, 20, 43, 0), #2662d9);
+  background: -webkit-gradient(linear, right top, left top, from(rgba(43, 26, 8, 0)), to(#d98026));
+  background: linear-gradient(to left, rgba(43, 26, 8, 0), #d98026);
   -webkit-animation: 2s animateTop linear infinite;
           animation: 2s animateTop linear infinite;
-}
-
-@-webkit-keyframes animateTop {
-  0% {
-    -webkit-transform: translateX(100%);
-            transform: translateX(100%);
-  }
-  100% {
-    -webkit-transform: translateX(-100%);
-            transform: translateX(-100%);
-  }
 }
 
 @keyframes animateTop {
@@ -253,26 +239,15 @@ html {
   }
 }
 
-.animated-button span:nth-child(2) {
+.animated-button2 span:nth-child(2) {
   top: 0px;
   right: 0px;
   height: 100%;
   width: 2px;
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(8, 20, 43, 0)), to(#2662d9));
-  background: linear-gradient(to top, rgba(8, 20, 43, 0), #2662d9);
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(43, 26, 8, 0)), to(#d98026));
+  background: linear-gradient(to top, rgba(43, 26, 8, 0), #d98026);
   -webkit-animation: 2s animateRight linear -1s infinite;
           animation: 2s animateRight linear -1s infinite;
-}
-
-@-webkit-keyframes animateRight {
-  0% {
-    -webkit-transform: translateY(100%);
-            transform: translateY(100%);
-  }
-  100% {
-    -webkit-transform: translateY(-100%);
-            transform: translateY(-100%);
-  }
 }
 
 @keyframes animateRight {
@@ -286,26 +261,15 @@ html {
   }
 }
 
-.animated-button span:nth-child(3) {
+.animated-button2 span:nth-child(3) {
   bottom: 0px;
   left: 0px;
   width: 100%;
   height: 2px;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(8, 20, 43, 0)), to(#2662d9));
-  background: linear-gradient(to right, rgba(8, 20, 43, 0), #2662d9);
+  background: -webkit-gradient(linear, left top, right top, from(rgba(43, 26, 8, 0)), to(#d98026));
+  background: linear-gradient(to right, rgba(43, 26, 8, 0), #d98026);
   -webkit-animation: 2s animateBottom linear infinite;
           animation: 2s animateBottom linear infinite;
-}
-
-@-webkit-keyframes animateBottom {
-  0% {
-    -webkit-transform: translateX(-100%);
-            transform: translateX(-100%);
-  }
-  100% {
-    -webkit-transform: translateX(100%);
-            transform: translateX(100%);
-  }
 }
 
 @keyframes animateBottom {
@@ -319,26 +283,15 @@ html {
   }
 }
 
-.animated-button span:nth-child(4) {
+.animated-button2 span:nth-child(4) {
   top: 0px;
   left: 0px;
   height: 100%;
   width: 2px;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(8, 20, 43, 0)), to(#2662d9));
-  background: linear-gradient(to bottom, rgba(8, 20, 43, 0), #2662d9);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(43, 26, 8, 0)), to(#d98026));
+  background: linear-gradient(to bottom, rgba(43, 26, 8, 0), #d98026);
   -webkit-animation: 2s animateLeft linear -1s infinite;
           animation: 2s animateLeft linear -1s infinite;
-}
-
-@-webkit-keyframes animateLeft {
-  0% {
-    -webkit-transform: translateY(-100%);
-            transform: translateY(-100%);
-  }
-  100% {
-    -webkit-transform: translateY(100%);
-            transform: translateY(100%);
-  }
 }
 
 @keyframes animateLeft {
@@ -351,8 +304,6 @@ html {
             transform: translateY(100%);
   }
 }
-
-
 /*# sourceMappingURL=button.css.map */
 <!--Button Animation Ends-->
 
@@ -395,7 +346,7 @@ html {
 <!-- Button Code Stats Here-->
     <section class="buttons" style="padding-top: 0px; ">
 
-         <a class="animated-button"; href="https://afflat3e1.com/lnk.asp?o=18120&c=918277&a=348769&k=BF65F44921C31BBB0579E9A0EB086CCE&l=19367" target="_blank";>
+         <a class="animated-button2"; href="https://afflat3e1.com/lnk.asp?o=18691&c=918277&a=348769&k=DB901D38C649BCE5CDEC4ED0B2300306&l=19870" target="_blank";>
   <span></span>
   <span></span>
   <span></span>
@@ -407,9 +358,7 @@ html {
 <!-- Button Code Ends Here-->
 <!--PopUnder Starts Here -->
 <!-- Modify this according to your requirement -->
-<p>
-  Confirmation Page Automaticlly Opens After <span id="countdown">6</span> seconds
-</p>
+
 <!-- JavaScript part -->
 <script type="text/javascript">
     

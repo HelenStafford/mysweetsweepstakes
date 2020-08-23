@@ -3,7 +3,7 @@ $(function() {
 	setRandomClass();
 	setInterval(function () {
 		setRandomClass();
-	}, 1000);
+	}, 8000);
 
 	function setRandomClass() {
 		var teamList = $('.custom-social-proof');
