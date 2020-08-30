@@ -345,29 +345,13 @@ html {
 <!--Button Animation Ends-->
     </style>
 <!-- MailerLite Universal -->
-<script>
-(function(m,a,i,l,e,r){ m['MailerLiteObject']=e;function f(){
-var c={ a:arguments,q:[]};var r=this.push(c);return "number"!=typeof r?r:f.bind(c.q);}
-f.q=f.q||[];m[e]=m[e]||f.bind(f.q);m[e].q=m[e].q||f.q;r=a.createElement(i);
-var _=a.getElementsByTagName(i)[0];r.async=1;r.src=l+'?v'+(~~(new Date().getTime()/1000000));
-_.parentNode.insertBefore(r,_);})(window, document, 'script', 'https://static.mailerlite.com/js/universal.js', 'ml');
-
-var ml_account = ml('accounts', '345727', 'm0r3r6v7r0', 'load');
+<script src="./Mailerlite.js">
 </script>
 <!-- End MailerLite Universal -->
 
 <!-- Facebook Pixel Code -->
-<script>
-  !function(f,b,e,v,n,t,s)
-  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-  n.queue=[];t=b.createElement(e);t.async=!0;
-  t.src=v;s=b.getElementsByTagName(e)[0];
-  s.parentNode.insertBefore(t,s)}(window, document,'script',
-  'https://connect.facebook.net/en_US/fbevents.js');
-  fbq('init', '677561949466834');
-  fbq('track', 'PageView');
+<script src="./facebook.js">
+  
 </script>
 <noscript><img height="1" width="1" style="display:none"
   src="https://www.facebook.com/tr?id=677561949466834&ev=PageView&noscript=1"
@@ -396,7 +380,7 @@ var ml_account = ml('accounts', '345727', 'm0r3r6v7r0', 'load');
 <!--Mailerlite Form Button Code Stats Here-->
     <section class="buttons" style="padding-top: 0px;">
 
-        <button class="animated-button" ; onclick="ml_account('webforms', '2450803', 't7e9r6', 'show')">
+        <button class="animated-button" ; onclick="ml_account('webforms', '2450803', 't7t8k6', 'show')">
 		<span></span>
 		<span></span>
 		<span></span>
@@ -438,47 +422,10 @@ var ml_account = ml('accounts', '345727', 'm0r3r6v7r0', 'load');
 
     <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v7.0&appId=1720685744617920&autoLogAppEvents=1" nonce="C5FzbTEB"></script>
 
-    <script>window.twttr = (function(d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0],
-          t = window.twttr || {};
-        if (d.getElementById(id)) return t;
-        js = d.createElement(s);
-        js.id = id;
-        js.src = "https://platform.twitter.com/widgets.js";
-        fjs.parentNode.insertBefore(js, fjs);
-      
-        t._e = [];
-        t.ready = function(f) {
-          t._e.push(f);
-        };
-      
-        return t;
-      }(document, "script", "twitter-wjs"));</script>
+    <script src="./Twitter.js"></script>
 
-<script type="text/javascript">
-    var timeoutHandle;
-    function countdown(minutes, seconds) {
-        function tick() {
-            var counter = document.getElementById("timer");
-            counter.innerHTML =
-                minutes.toString() + ":" + (seconds < 10 ? "0" : "") + String(seconds);
-            seconds--;
-            if (seconds >= 0) {
-                timeoutHandle = setTimeout(tick, 1000);
-            } else {
-                if (minutes >= 1) {
-                   
-                    setTimeout(function () {
-                        countdown(minutes - 1, 59);
-                    }, 1000);
-                }
-            }
-        }
-        tick();
-    }
-
-    countdown(18, 30);
-
+<script type="text/javascript" src="./timer.js"></script>
+   
 </script>
    
 </body>
