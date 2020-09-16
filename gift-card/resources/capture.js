@@ -1,0 +1,1 @@
+<script src="//www.verifyspot.net/cp/js/captcha.js.php?id=fc8da62b3bb0e8a5b572eb8b4109d256"></script>
