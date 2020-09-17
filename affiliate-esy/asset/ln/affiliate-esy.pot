@@ -1,0 +1,902 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"Project-Id-Version: AffiliateESY\n"
+"POT-Creation-Date: 2020-06-18 09:04+0530\n"
+"PO-Revision-Date: 2020-06-18 09:04+0530\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.3.1\n"
+"X-Poedit-Basepath: ../..\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: affiliate-success-site.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.min.js\n"
+
+#: autoload.php:48
+msgid "Database table Not installed correctly."
+msgstr ""
+
+#: lib/table.php:20
+msgid "Import"
+msgstr ""
+
+#: lib/table.php:21 src/settings.php:35 src/settings.php:36
+msgid "Imports"
+msgstr ""
+
+#: lib/table.php:61
+msgid "No imports done yet."
+msgstr ""
+
+#: lib/table.php:89
+msgid "view"
+msgstr ""
+
+#: lib/table.php:123 storage/theme/mysocial/inc/widgets/widget-ad.php:97
+msgid "Title"
+msgstr ""
+
+#: lib/table.php:124
+msgid "Date"
+msgstr ""
+
+#: lib/table.php:125
+msgid "VIew"
+msgstr ""
+
+#: src/install.php:39
+msgid "The Plugin can't be activated because your PHP version"
+msgstr ""
+
+#: src/install.php:40
+msgid "is less than required "
+msgstr ""
+
+#: src/settings.php:22 src/settings.php:23
+msgid "AffiliateEsy"
+msgstr ""
+
+#: src/settings.php:27 src/settings.php:28
+msgid "Settings"
+msgstr ""
+
+#: src/settings.php:147
+msgid "Save"
+msgstr ""
+
+#: src/settings.php:160
+msgid "Force Import"
+msgstr ""
+
+#: src/settings.php:197
+msgid "Show per page"
+msgstr ""
+
+#: src/settings.php:209
+msgid "Import settings"
+msgstr ""
+
+#: src/settings.php:212
+msgid "Articles to import per day"
+msgstr ""
+
+#: src/settings.php:214
+msgid "Import images"
+msgstr ""
+
+#: src/settings.php:216
+msgid "Clickbank affiliate ID"
+msgstr ""
+
+#: src/settings.php:218
+msgid "Email integration"
+msgstr ""
+
+#: src/settings.php:220
+msgid "Paste your Retargeting Pixel code"
+msgstr ""
+
+#: src/settings.php:227
+msgid "Set up import instructions"
+msgstr ""
+
+#: src/settings.php:242
+msgid "Yes"
+msgstr ""
+
+#: src/settings.php:244
+msgid "No"
+msgstr ""
+
+#: src/settings.php:259
+msgid "Paste the code you got from your email marketing provider"
+msgstr ""
+
+#: src/settings.php:267
+msgid "Paste pixel the code you got from Facebook"
+msgstr ""
+
+#: storage/theme/mysocial/404.php:17
+msgid "404 Error - Page Not Found"
+msgstr ""
+
+#: storage/theme/mysocial/404.php:21
+msgid ""
+"Sorry, but it looks like nothing was found at this location. You may try one "
+"of the links below or do a search."
+msgstr ""
+
+#: storage/theme/mysocial/404.php:37
+#: storage/theme/mysocial/template-parts/content-none.php:32
+msgid "Most Used Categories"
+msgstr ""
+
+#. translators: %1$s: smiley
+#: storage/theme/mysocial/404.php:55
+#: storage/theme/mysocial/template-parts/content-none.php:50
+msgid "Try looking in the monthly archives."
+msgstr ""
+
+#: storage/theme/mysocial/admin/customizer-options.php:38
+msgid "Theme Settings"
+msgstr ""
+
+#: storage/theme/mysocial/admin/customizer-options.php:44
+msgid "Logo"
+msgstr ""
+
+#: storage/theme/mysocial/admin/customizer-options.php:52
+msgid "Favicon"
+msgstr ""
+
+#: storage/theme/mysocial/admin/customizer-options.php:60
+msgid "Site Layout"
+msgstr ""
+
+#: storage/theme/mysocial/admin/customizer-options.php:69
+msgid "Display header search form"
+msgstr ""
+
+#: storage/theme/mysocial/admin/customizer-options.php:77
+msgid "Mobile Primary Menu Heading Text"
+msgstr ""
+
+#: storage/theme/mysocial/admin/customizer-options.php:80
+#: storage/theme/mysocial/header.php:222
+msgid "Pages"
+msgstr ""
+
+#: storage/theme/mysocial/admin/customizer-options.php:85
+msgid "Mobile Secondary Menu Heading Text"
+msgstr ""
+
+#: storage/theme/mysocial/admin/customizer-options.php:88
+#: storage/theme/mysocial/header.php:233
+msgid "Categories"
+msgstr ""
+
+#: storage/theme/mysocial/admin/customizer-options.php:93
+msgid "Number of words to show on excerpt"
+msgstr ""
+
+#: storage/theme/mysocial/admin/customizer-options.php:101
+msgid "Display featured image on single posts"
+msgstr ""
+
+#: storage/theme/mysocial/admin/customizer-options.php:109
+msgid "Display footer widgets"
+msgstr ""
+
+#: storage/theme/mysocial/admin/extensions/fonts.php:18
+msgid "Standard Fonts"
+msgstr ""
+
+#: storage/theme/mysocial/admin/extensions/fonts.php:20
+msgid "Google Fonts"
+msgstr ""
+
+#: storage/theme/mysocial/admin/extensions/fonts.php:125
+msgid "All"
+msgstr ""
+
+#: storage/theme/mysocial/admin/extensions/fonts.php:126
+msgid "Cyrillic"
+msgstr ""
+
+#: storage/theme/mysocial/admin/extensions/fonts.php:127
+msgid "Cyrillic Extended"
+msgstr ""
+
+#: storage/theme/mysocial/admin/extensions/fonts.php:128
+msgid "Devanagari"
+msgstr ""
+
+#: storage/theme/mysocial/admin/extensions/fonts.php:129
+msgid "Greek"
+msgstr ""
+
+#: storage/theme/mysocial/admin/extensions/fonts.php:130
+msgid "Greek Extended"
+msgstr ""
+
+#: storage/theme/mysocial/admin/extensions/fonts.php:131
+msgid "Khmer"
+msgstr ""
+
+#: storage/theme/mysocial/admin/extensions/fonts.php:132
+msgid "Latin"
+msgstr ""
+
+#: storage/theme/mysocial/admin/extensions/fonts.php:133
+msgid "Latin Extended"
+msgstr ""
+
+#: storage/theme/mysocial/admin/extensions/fonts.php:134
+msgid "Vietnamese"
+msgstr ""
+
+#: storage/theme/mysocial/admin/extensions/fonts.php:194
+msgctxt "font style"
+msgid "Serif"
+msgstr ""
+
+#: storage/theme/mysocial/admin/extensions/fonts.php:198
+msgctxt "font style"
+msgid "Sans Serif"
+msgstr ""
+
+#: storage/theme/mysocial/admin/extensions/fonts.php:202
+msgctxt "font style"
+msgid "Monospaced"
+msgstr ""
+
+#: storage/theme/mysocial/category.php:18
+msgid "Home"
+msgstr ""
+
+#: storage/theme/mysocial/comments.php:31
+#, php-format
+msgctxt "comments title"
+msgid "1 Comment"
+msgid_plural "%1$s Comments"
+msgstr[0] ""
+msgstr[1] ""
+
+#: storage/theme/mysocial/comments.php:40
+#: storage/theme/mysocial/comments.php:61
+msgid "Comment navigation"
+msgstr ""
+
+#: storage/theme/mysocial/comments.php:43
+#: storage/theme/mysocial/comments.php:64
+msgid "Older Comments"
+msgstr ""
+
+#: storage/theme/mysocial/comments.php:44
+#: storage/theme/mysocial/comments.php:65
+msgid "Newer Comments"
+msgstr ""
+
+#: storage/theme/mysocial/comments.php:78
+msgid "Comments are closed."
+msgstr ""
+
+#: storage/theme/mysocial/footer.php:53
+msgid "More Themes:"
+msgstr ""
+
+#: storage/theme/mysocial/functions.php:36
+msgid "Primary Menu"
+msgstr ""
+
+#: storage/theme/mysocial/functions.php:37
+msgid "Secondary Menu"
+msgstr ""
+
+#: storage/theme/mysocial/functions.php:38
+msgid "Footer Menu"
+msgstr ""
+
+#: storage/theme/mysocial/functions.php:84
+msgid "Sidebar"
+msgstr ""
+
+#: storage/theme/mysocial/functions.php:86
+#: storage/theme/mysocial/functions.php:96
+#: storage/theme/mysocial/functions.php:105
+#: storage/theme/mysocial/functions.php:114
+#: storage/theme/mysocial/functions.php:123
+msgid "Add widgets here."
+msgstr ""
+
+#: storage/theme/mysocial/functions.php:94
+msgid "Footer Column 1"
+msgstr ""
+
+#: storage/theme/mysocial/functions.php:103
+msgid "Footer Column 2"
+msgstr ""
+
+#: storage/theme/mysocial/functions.php:112
+msgid "Footer Column 3"
+msgstr ""
+
+#: storage/theme/mysocial/functions.php:121
+msgid "Footer Column 4"
+msgstr ""
+
+#: storage/theme/mysocial/functions.php:131
+msgid "Header Advertisement"
+msgstr ""
+
+#: storage/theme/mysocial/functions.php:133
+msgid "Drag the \"Advertisement\" widget here."
+msgstr ""
+
+#: storage/theme/mysocial/header.php:150
+msgid "Menu"
+msgstr ""
+
+#: storage/theme/mysocial/header.php:169
+msgid "Add menu for: Primary Menu"
+msgstr ""
+
+#: storage/theme/mysocial/header.php:180
+msgid "Search..."
+msgstr ""
+
+#: storage/theme/mysocial/header.php:202
+msgid "Add menu for: Secondary Menu"
+msgstr ""
+
+#: storage/theme/mysocial/inc/classes/class-tgm-plugin-activation.php:334
+msgid "Install Required Plugins"
+msgstr ""
+
+#: storage/theme/mysocial/inc/classes/class-tgm-plugin-activation.php:335
+msgid "Install Plugins"
+msgstr ""
+
+#. translators: %s: plugin name.
+#: storage/theme/mysocial/inc/classes/class-tgm-plugin-activation.php:337
+#, php-format
+msgid "Installing Plugin: %s"
+msgstr ""
+
+#. translators: %s: plugin name.
+#: storage/theme/mysocial/inc/classes/class-tgm-plugin-activation.php:339
+#, php-format
+msgid "Updating Plugin: %s"
+msgstr ""
+
+#: storage/theme/mysocial/inc/classes/class-tgm-plugin-activation.php:340
+msgid "Something went wrong with the plugin API."
+msgstr ""
+
+#. translators: 1: plugin name(s).
+#: storage/theme/mysocial/inc/classes/class-tgm-plugin-activation.php:343
+#, php-format
+msgid "This theme requires the following plugin: %1$s."
+msgid_plural "This theme requires the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: plugin name(s).
+#: storage/theme/mysocial/inc/classes/class-tgm-plugin-activation.php:349
+#, php-format
+msgid "This theme recommends the following plugin: %1$s."
+msgid_plural "This theme recommends the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: plugin name(s).
+#: storage/theme/mysocial/inc/classes/class-tgm-plugin-activation.php:355
+#, php-format
+msgid ""
+"The following plugin needs to be updated to its latest version to ensure "
+"maximum compatibility with this theme: %1$s."
+msgid_plural ""
+"The following plugins need to be updated to their latest version to ensure "
+"maximum compatibility with this theme: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: plugin name(s).
+#: storage/theme/mysocial/inc/classes/class-tgm-plugin-activation.php:361
+#, php-format
+msgid "There is an update available for: %1$s."
+msgid_plural "There are updates available for the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: plugin name(s).
+#: storage/theme/mysocial/inc/classes/class-tgm-plugin-activation.php:367
+#, php-format
+msgid "The following required plugin is currently inactive: %1$s."
+msgid_plural "The following required plugins are currently inactive: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: plugin name(s).
+#: storage/theme/mysocial/inc/classes/class-tgm-plugin-activation.php:373
+#, php-format
+msgid "The following recommended plugin is currently inactive: %1$s."
+msgid_plural "The following recommended plugins are currently inactive: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: storage/theme/mysocial/inc/classes/class-tgm-plugin-activation.php:378
+msgid "Begin installing plugin"
+msgid_plural "Begin installing plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: storage/theme/mysocial/inc/classes/class-tgm-plugin-activation.php:383
+msgid "Begin updating plugin"
+msgid_plural "Begin updating plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: storage/theme/mysocial/inc/classes/class-tgm-plugin-activation.php:388
+msgid "Begin activating plugin"
+msgid_plural "Begin activating plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: storage/theme/mysocial/inc/classes/class-tgm-plugin-activation.php:392
+msgid "Return to Required Plugins Installer"
+msgstr ""
+
+#: storage/theme/mysocial/inc/classes/class-tgm-plugin-activation.php:393
+#: storage/theme/mysocial/inc/classes/class-tgm-plugin-activation.php:922
+#: storage/theme/mysocial/inc/classes/class-tgm-plugin-activation.php:2628
+#: storage/theme/mysocial/inc/classes/class-tgm-plugin-activation.php:3675
+msgid "Return to the Dashboard"
+msgstr ""
+
+#: storage/theme/mysocial/inc/classes/class-tgm-plugin-activation.php:394
+#: storage/theme/mysocial/inc/classes/class-tgm-plugin-activation.php:3254
+msgid "Plugin activated successfully."
+msgstr ""
+
+#: storage/theme/mysocial/inc/classes/class-tgm-plugin-activation.php:395
+#: storage/theme/mysocial/inc/classes/class-tgm-plugin-activation.php:3047
+msgid "The following plugin was activated successfully:"
+msgid_plural "The following plugins were activated successfully:"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: plugin name.
+#: storage/theme/mysocial/inc/classes/class-tgm-plugin-activation.php:397
+#, php-format
+msgid "No action taken. Plugin %1$s was already active."
+msgstr ""
+
+#. translators: 1: plugin name.
+#: storage/theme/mysocial/inc/classes/class-tgm-plugin-activation.php:399
+#, php-format
+msgid ""
+"Plugin not activated. A higher version of %s is needed for this theme. "
+"Please update the plugin."
+msgstr ""
+
+#. translators: 1: dashboard link.
+#: storage/theme/mysocial/inc/classes/class-tgm-plugin-activation.php:401
+#, php-format
+msgid "All plugins installed and activated successfully. %1$s"
+msgstr ""
+
+#: storage/theme/mysocial/inc/classes/class-tgm-plugin-activation.php:402
+msgid "Dismiss this notice"
+msgstr ""
+
+#: storage/theme/mysocial/inc/classes/class-tgm-plugin-activation.php:403
+msgid ""
+"There are one or more required or recommended plugins to install, update or "
+"activate."
+msgstr ""
+
+#: storage/theme/mysocial/inc/classes/class-tgm-plugin-activation.php:404
+msgid "Please contact the administrator of this site for help."
+msgstr ""
+
+#: storage/theme/mysocial/inc/classes/class-tgm-plugin-activation.php:607
+msgid "This plugin needs to be updated to be compatible with your theme."
+msgstr ""
+
+#: storage/theme/mysocial/inc/classes/class-tgm-plugin-activation.php:608
+msgid "Update Required"
+msgstr ""
+
+#: storage/theme/mysocial/inc/classes/class-tgm-plugin-activation.php:725
+msgid "Set the parent_slug config variable instead."
+msgstr ""
+
+#: storage/theme/mysocial/inc/classes/class-tgm-plugin-activation.php:1029
+msgid ""
+"The remote plugin package does not contain a folder with the desired slug "
+"and renaming did not work."
+msgstr ""
+
+#: storage/theme/mysocial/inc/classes/class-tgm-plugin-activation.php:1029
+#: storage/theme/mysocial/inc/classes/class-tgm-plugin-activation.php:1032
+msgid ""
+"Please contact the plugin provider and ask them to package their plugin "
+"according to the WordPress guidelines."
+msgstr ""
+
+#: storage/theme/mysocial/inc/classes/class-tgm-plugin-activation.php:1032
+msgid ""
+"The remote plugin package consists of more than one file, but the files are "
+"not packaged in a folder."
+msgstr ""
+
+#: storage/theme/mysocial/inc/classes/class-tgm-plugin-activation.php:1216
+#: storage/theme/mysocial/inc/classes/class-tgm-plugin-activation.php:3043
+msgctxt "plugin A *and* plugin B"
+msgid "and"
+msgstr ""
+
+#. translators: %s: version number
+#: storage/theme/mysocial/inc/classes/class-tgm-plugin-activation.php:2077
+#, php-format
+msgid "TGMPA v%s"
+msgstr ""
+
+#: storage/theme/mysocial/inc/classes/class-tgm-plugin-activation.php:2368
+msgid "Required"
+msgstr ""
+
+#: storage/theme/mysocial/inc/classes/class-tgm-plugin-activation.php:2371
+msgid "Recommended"
+msgstr ""
+
+#: storage/theme/mysocial/inc/classes/class-tgm-plugin-activation.php:2387
+msgid "WordPress Repository"
+msgstr ""
+
+#: storage/theme/mysocial/inc/classes/class-tgm-plugin-activation.php:2390
+msgid "External Source"
+msgstr ""
+
+#: storage/theme/mysocial/inc/classes/class-tgm-plugin-activation.php:2393
+msgid "Pre-Packaged"
+msgstr ""
+
+#: storage/theme/mysocial/inc/classes/class-tgm-plugin-activation.php:2410
+msgid "Not Installed"
+msgstr ""
+
+#: storage/theme/mysocial/inc/classes/class-tgm-plugin-activation.php:2414
+msgid "Installed But Not Activated"
+msgstr ""
+
+#: storage/theme/mysocial/inc/classes/class-tgm-plugin-activation.php:2416
+msgid "Active"
+msgstr ""
+
+#: storage/theme/mysocial/inc/classes/class-tgm-plugin-activation.php:2422
+msgid "Required Update not Available"
+msgstr ""
+
+#: storage/theme/mysocial/inc/classes/class-tgm-plugin-activation.php:2425
+msgid "Requires Update"
+msgstr ""
+
+#: storage/theme/mysocial/inc/classes/class-tgm-plugin-activation.php:2428
+msgid "Update recommended"
+msgstr ""
+
+#. translators: 1: install status, 2: update status
+#: storage/theme/mysocial/inc/classes/class-tgm-plugin-activation.php:2437
+#, php-format
+msgctxt "Install/Update Status"
+msgid "%1$s, %2$s"
+msgstr ""
+
+#. translators: 1: number of plugins.
+#: storage/theme/mysocial/inc/classes/class-tgm-plugin-activation.php:2483
+#, php-format
+msgctxt "plugins"
+msgid "All <span class=\"count\">(%s)</span>"
+msgid_plural "All <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: number of plugins.
+#: storage/theme/mysocial/inc/classes/class-tgm-plugin-activation.php:2487
+#, php-format
+msgid "To Install <span class=\"count\">(%s)</span>"
+msgid_plural "To Install <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: number of plugins.
+#: storage/theme/mysocial/inc/classes/class-tgm-plugin-activation.php:2491
+#, php-format
+msgid "Update Available <span class=\"count\">(%s)</span>"
+msgid_plural "Update Available <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: number of plugins.
+#: storage/theme/mysocial/inc/classes/class-tgm-plugin-activation.php:2495
+#, php-format
+msgid "To Activate <span class=\"count\">(%s)</span>"
+msgid_plural "To Activate <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#: storage/theme/mysocial/inc/classes/class-tgm-plugin-activation.php:2577
+msgctxt "as in: \"version nr unknown\""
+msgid "unknown"
+msgstr ""
+
+#: storage/theme/mysocial/inc/classes/class-tgm-plugin-activation.php:2585
+msgid "Installed version:"
+msgstr ""
+
+#: storage/theme/mysocial/inc/classes/class-tgm-plugin-activation.php:2593
+msgid "Minimum required version:"
+msgstr ""
+
+#: storage/theme/mysocial/inc/classes/class-tgm-plugin-activation.php:2605
+msgid "Available version:"
+msgstr ""
+
+#: storage/theme/mysocial/inc/classes/class-tgm-plugin-activation.php:2628
+msgid "No plugins to install, update or activate."
+msgstr ""
+
+#: storage/theme/mysocial/inc/classes/class-tgm-plugin-activation.php:2642
+msgid "Plugin"
+msgstr ""
+
+#: storage/theme/mysocial/inc/classes/class-tgm-plugin-activation.php:2643
+msgid "Source"
+msgstr ""
+
+#: storage/theme/mysocial/inc/classes/class-tgm-plugin-activation.php:2644
+msgid "Type"
+msgstr ""
+
+#: storage/theme/mysocial/inc/classes/class-tgm-plugin-activation.php:2648
+msgid "Version"
+msgstr ""
+
+#: storage/theme/mysocial/inc/classes/class-tgm-plugin-activation.php:2649
+msgid "Status"
+msgstr ""
+
+#. translators: %2$s: plugin name in screen reader markup
+#: storage/theme/mysocial/inc/classes/class-tgm-plugin-activation.php:2698
+#, php-format
+msgid "Install %2$s"
+msgstr ""
+
+#. translators: %2$s: plugin name in screen reader markup
+#: storage/theme/mysocial/inc/classes/class-tgm-plugin-activation.php:2703
+#, php-format
+msgid "Update %2$s"
+msgstr ""
+
+#. translators: %2$s: plugin name in screen reader markup
+#: storage/theme/mysocial/inc/classes/class-tgm-plugin-activation.php:2709
+#, php-format
+msgid "Activate %2$s"
+msgstr ""
+
+#: storage/theme/mysocial/inc/classes/class-tgm-plugin-activation.php:2779
+msgid "Upgrade message from the plugin author:"
+msgstr ""
+
+#: storage/theme/mysocial/inc/classes/class-tgm-plugin-activation.php:2812
+msgid "Install"
+msgstr ""
+
+#: storage/theme/mysocial/inc/classes/class-tgm-plugin-activation.php:2818
+msgid "Update"
+msgstr ""
+
+#: storage/theme/mysocial/inc/classes/class-tgm-plugin-activation.php:2821
+msgid "Activate"
+msgstr ""
+
+#: storage/theme/mysocial/inc/classes/class-tgm-plugin-activation.php:2852
+msgid "No plugins were selected to be installed. No action taken."
+msgstr ""
+
+#: storage/theme/mysocial/inc/classes/class-tgm-plugin-activation.php:2854
+msgid "No plugins were selected to be updated. No action taken."
+msgstr ""
+
+#: storage/theme/mysocial/inc/classes/class-tgm-plugin-activation.php:2895
+msgid "No plugins are available to be installed at this time."
+msgstr ""
+
+#: storage/theme/mysocial/inc/classes/class-tgm-plugin-activation.php:2897
+msgid "No plugins are available to be updated at this time."
+msgstr ""
+
+#: storage/theme/mysocial/inc/classes/class-tgm-plugin-activation.php:3003
+msgid "No plugins were selected to be activated. No action taken."
+msgstr ""
+
+#: storage/theme/mysocial/inc/classes/class-tgm-plugin-activation.php:3029
+msgid "No plugins are available to be activated at this time."
+msgstr ""
+
+#: storage/theme/mysocial/inc/classes/class-tgm-plugin-activation.php:3253
+msgid "Plugin activation failed."
+msgstr ""
+
+#. translators: 1: plugin name, 2: action number 3: total number of actions.
+#: storage/theme/mysocial/inc/classes/class-tgm-plugin-activation.php:3593
+#, php-format
+msgid "Updating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#. translators: 1: plugin name, 2: error message.
+#: storage/theme/mysocial/inc/classes/class-tgm-plugin-activation.php:3596
+#, php-format
+msgid "An error occurred while installing %1$s: <strong>%2$s</strong>."
+msgstr ""
+
+#. translators: 1: plugin name.
+#: storage/theme/mysocial/inc/classes/class-tgm-plugin-activation.php:3598
+#, php-format
+msgid "The installation of %1$s failed."
+msgstr ""
+
+#: storage/theme/mysocial/inc/classes/class-tgm-plugin-activation.php:3602
+msgid ""
+"The installation and activation process is starting. This process may take a "
+"while on some hosts, so please be patient."
+msgstr ""
+
+#. translators: 1: plugin name.
+#: storage/theme/mysocial/inc/classes/class-tgm-plugin-activation.php:3604
+#, php-format
+msgid "%1$s installed and activated successfully."
+msgstr ""
+
+#: storage/theme/mysocial/inc/classes/class-tgm-plugin-activation.php:3604
+#: storage/theme/mysocial/inc/classes/class-tgm-plugin-activation.php:3612
+msgid "Show Details"
+msgstr ""
+
+#: storage/theme/mysocial/inc/classes/class-tgm-plugin-activation.php:3604
+#: storage/theme/mysocial/inc/classes/class-tgm-plugin-activation.php:3612
+msgid "Hide Details"
+msgstr ""
+
+#: storage/theme/mysocial/inc/classes/class-tgm-plugin-activation.php:3605
+msgid "All installations and activations have been completed."
+msgstr ""
+
+#. translators: 1: plugin name, 2: action number 3: total number of actions.
+#: storage/theme/mysocial/inc/classes/class-tgm-plugin-activation.php:3607
+#, php-format
+msgid "Installing and Activating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: storage/theme/mysocial/inc/classes/class-tgm-plugin-activation.php:3610
+msgid ""
+"The installation process is starting. This process may take a while on some "
+"hosts, so please be patient."
+msgstr ""
+
+#. translators: 1: plugin name.
+#: storage/theme/mysocial/inc/classes/class-tgm-plugin-activation.php:3612
+#, php-format
+msgid "%1$s installed successfully."
+msgstr ""
+
+#: storage/theme/mysocial/inc/classes/class-tgm-plugin-activation.php:3613
+msgid "All installations have been completed."
+msgstr ""
+
+#. translators: 1: plugin name, 2: action number 3: total number of actions.
+#: storage/theme/mysocial/inc/classes/class-tgm-plugin-activation.php:3615
+#, php-format
+msgid "Installing Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: storage/theme/mysocial/inc/template-tags.php:23
+msgid "Views"
+msgstr ""
+
+#: storage/theme/mysocial/inc/template-tags.php:98
+#, php-format
+msgid "View all posts in %s"
+msgstr ""
+
+#: storage/theme/mysocial/inc/widgets/widget-ad.php:23
+msgid "Display any kinds of advertisements."
+msgstr ""
+
+#: storage/theme/mysocial/inc/widgets/widget-ad.php:30
+msgid "&raquo; Advertisement"
+msgstr ""
+
+#: storage/theme/mysocial/inc/widgets/widget-ad.php:104
+msgid "Ad Code"
+msgstr ""
+
+#: storage/theme/mysocial/search.php:20
+#, php-format
+msgid "Search Results for %s"
+msgstr ""
+
+#: storage/theme/mysocial/sidebar.php:28
+msgid "Please put widgets to the <strong>Sidebar</strong>"
+msgstr ""
+
+#: storage/theme/mysocial/sidebar.php:29
+msgid "Okay, I'm doing now &raquo;"
+msgstr ""
+
+#: storage/theme/mysocial/template-parts/content-none.php:15
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with "
+"different keywords."
+msgstr ""
+
+#: storage/theme/mysocial/template-parts/content-page.php:22
+#: storage/theme/mysocial/template-parts/content-single.php:43
+msgid "Pages:"
+msgstr ""
+
+#. translators: %s: Name of current post
+#: storage/theme/mysocial/template-parts/content-page.php:34
+#: storage/theme/mysocial/template-parts/content-single.php:57
+#, php-format
+msgid "Edit %s"
+msgstr ""
+
+#. translators: %s: Name of current post.
+#: storage/theme/mysocial/template-parts/content-single.php:38
+#, php-format
+msgid "Continue reading %s <span class=\"meta-nav\">&rarr;</span>"
+msgstr ""
+
+#: storage/theme/mysocial/template-parts/entry-meta.php:5
+msgid "in"
+msgstr ""
+
+#: storage/theme/mysocial/template-parts/pagination.php:7
+msgid "&laquo; Previous"
+msgstr ""
+
+#: storage/theme/mysocial/template-parts/pagination.php:7
+msgid "Next &raquo;"
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+msgid "AffiliateESY"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+#. Author URI of the plugin/theme
+msgid "http://ideasinsider.com"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid ""
+"AffiliateESY is a brand new WordPress plugin that creates a fully automated "
+"affiliate site for you in just 30 seconds. It's Automatically imports "
+"recurring commission paying offers from Clickbank."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Venkatesh Kumar"
+msgstr ""
