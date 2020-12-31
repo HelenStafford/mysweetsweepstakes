@@ -15,7 +15,7 @@
 		//Locker
 (function($) {
             $.fn.progressbar = function() {
-                var a = "<p>Hurry! Only <span class='count'>" + remaining_items + "</span> left in stock.</p>" + "<div class='progressbar'><div style='width:100%'></div></div>";
+                var a = "<p>Hurry! Only <span class='count'>" + remaining_items + " left in stock.</p>" + "<div class='progressbar'><div style='width:100%'></div></div>";
                 this.addClass('items-count');
                 this.html(a + this.html());
                 updateMeter(this);
