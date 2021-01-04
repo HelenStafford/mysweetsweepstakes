@@ -1,0 +1,89 @@
+Please create a fully responsiple website design like Final_design.jpg
+
+Only make those changes with this design:
+
+0. Image in the top of page. Max width like a frame below:
+
+1. In the top on the website (where is 0 Your Entiries ㅣ 0 Total Entiries ㅣ 1 Days start in)
+Please change that text to 7min flip coutdown timer. Like this one:
+https://codepen.io/aryan_r_h/pen/wvGeoZV
+
+2. After that make a Divider (a line like in Final_design.jpg picture) and then put a text:
+<h1>
+Amazon Gift Card Worth $250!
+</h1>
+<p>
+You could win an Amazin gift card worth $250 to spen on anything you like!
+</p>
+
+3. Add Gift card picture - amazon250us.png
+
+4. Add a text:
+<p>
+Log In to Enter this Giveaway:
+</p>
+
+5.Add button with text: 
+<h4>
+Use Your Email
+</h4>
+
+(in the button, but in next line)
+
+<p>
+*100% VERIFIED
+</p>
+
+6. Add Divider like in the picture and text:
+<p>
+5 Ways to Share
+</p>
++ other Divider.
+
+7. Add social share buttons (3 different source of codes):
+
+https://codepen.io/vassi/full/VYErYg
+
+https://codepen.io/gungorbudak/pen/yKdaZP
+
+https://codepen.io/vassi/full/VYErYg
+
+8. Add one more Divider and then text:
+<h3>
+Unlock bonus entries & boost your chances!
+</h3>
+<p>
+Earn Up to 8 more points by finishing the entiries above
+</p>
+
+9. Add 3 footer:
+
+Privacy Polacy href="http://yahoo.com/1"
+Terms&COnditions href="http://yahoo.com/2"
+Disclamer href="http://yahoo.com/3"
+
+10. Add Favicon - Favicon.png
+
+11. Add social share image - social.png
+
+12. After Clicking on sign up button: "Use Your Email" must open new popup like this one:
+
+https://codepen.io/syalakshay/pen/pWmYXx
+
+without this line: " Don't show this popup again", but with ctimer.js in the top of new popup window.
+
+** Website font text must be the same like a popup text.
+
+13. After clicking submit button all emails must go to google sheet. Please add some limitation to email submid form (visitors must enter some text, then @ and .com)
+
+14. Please add to the main submid button add this animation effect like CONFIRM.JPG button.
+
+15. After submiting email website must be redireted to https://google.com
+
+16. When website just opens, must popup Javascript Aler note With <h1> text in first line and <p> text in next line. Use random text I will edit it later.
+
+
+
+Note: If I miss some text or image, please use random one I'll change it later for mayself. And please
+Use external links to .js and .css files. And use comments <!-- --> beetween HTML code. Thanks!
+

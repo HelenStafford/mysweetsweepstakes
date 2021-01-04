@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Hurry! You May have Unclaimed CASH!</title>
+        <link rel="icon" type="image/ico" href="./assets/images/dummy-favicon.ico" />
+        
+        <link rel="stylesheet" href="./assets/css/style.css">
+        <link rel="stylesheet" href="./assets/vendor/bootstrap-4.5.3-dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./assets/css/newsletterpopup.css">
+        <link rel="stylesheet" href="./assets/css/fliptimer.css">
+
+        <script src="https://use.fontawesome.com/releases/v5.0.10/js/all.js"></script>
+        <script src="./assets/vendor/jquery-3.4.1.min.js"></script>
+        <script src="./assets/vendor/bootstrap-4.5.3-dist/js/bootstrap.bundle.min.js"></script>
+        
+    </head>
+    <body style="background: blue;">
+        <!------------ MODAL POPUP ----------------->
+
+        <div id="popup1" class="overlay">
+			<div class="popup"> <a class="close" href="#">&times;</a>
+				<div id="dialog" class="window">
+					
+					<div class="box">
+					<div class="newletter-title">
+						<h2>Sign up &amp; get 10% off</h2>
+					</div>
+					<div class="box-content newleter-content">
+						<label>Subscribe to our newsletters now and stay up-to-date with new collections, the latest lookbooks and exclusive offers.</label>
+						<div id="frm_subscribe">
+						<form method="POST" name="google-sheet" id="subscribe_popup">
+							<div>
+							<!-- <span class="required">*</span><span>Email</span>
+							<input type="text" value="" name="subscribe_pemail" id="subscribe_pemail">
+							<a class="button" onclick="" ><span>Submit</span></a>
+							-->
+							<input type="email" name="Email" class="form-control mx-auto" placeholder="Your Email *" id="subscribe_pemail" value="" required=""/>
+							<input type="hidden" value="" name="subscribe_pname" id="subscribe_pname">
+							<div id="notification"></div>
+							 
+							<input type="submit" name="submit" class="button py-2 text-white" value="submit"  onclick="" style="background-color: #333;"/>
+							</div>
+							
+						</form>
+
+
+						
+						
+						</div>
+						
+					</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+        <!------------ MODAL POPUP ----------------->
+        <div class="container my-4">
+            <div class="card shadow-lg ">
+                <div class="card-body mb-4">
+                    <div class="row my-4">
+                        <!------------- CONTENT  --------------->
+                        <!------------- TITLE HEADING  --------------->
+                        <div class="col-md-12 mb-4 mx-auto text-center">
+                            <h1 class="h1 text-danger ">LANDER QUIZ</h1>
+                        </div>
+                       <!------------- END TITLE HEADING  ------------>
+        
+                        <!------------- MAIN CONTENT  --------------->
+                        <div class="container">
+                            <div class="row">
+                                <!------------- IMAGE LEFT  --------------->
+                                <div class="col-md-5 mt-4">
+                                    <img src="./assets/images/example.png" class="img-fluid" alt="Responsive image">
+                                </div>
+                                <!------------- END IMAGE LEFT  ---------->
+
+                                <!------------- TEXT RIGHT  ----------->
+                                <div class="col-md-7 mt-4" >
+                                    <h2 class="h2 text-center text-danger">subtitle here</h2>
+                                    <br/>
+                                    <br/>
+                                    <p>we have member 3 miles away <br> more text here here here <br> check our offer in below for more information</p>
+                                    <p></p>
+                                    <p></p>
+                                    <hr/>
+
+
+                                    <div class="container-question" id="packQ1">
+                                        <div class="text-center">
+                                            <h4 class="h4">QUESTION 1</h4>
+                                            <p>what is question? here we go question!</p>
+                                        </div>
+                                        <div>
+                                            <div class="col-10 mb-4 mx-auto">
+                                                <a    type="button" class="btn btn-secondary btn-lg btn-block Quest1">YES</a>
+                                            </div>
+                                            <div class="col-10  mb-4 mx-auto">
+                                                <a    type="button" class="btn btn-secondary btn-lg btn-block Quest1">NO</a>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="container-question none" id="packQ2">
+                                        <div class="text-center">
+                                            <h4 class="h4">QUESTION 2</h4>
+                                            <p>what is question? here we go question!</p>
+                                        </div>
+                                        <div>
+                                            <div class="col-10 mb-4 mx-auto">
+                                                <a    type="button" class="btn btn-secondary btn-lg btn-block Quest2">YES</a>
+                                            </div>
+                                            <div class="col-10  mb-4 mx-auto">
+                                                <a    type="button" class="btn btn-secondary btn-lg btn-block Quest2">NO</a>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="container-question none" id="packQ3">
+                                        <div class="text-center">
+                                            <h4 class="h4">QUESTION 3</h4>
+                                            <p>what is question? here we go question!</p>
+                                        </div>
+                                        <div>
+                                            <div class="col-10 mb-4 mx-auto">
+                                                <a    type="button" class="btn btn-secondary btn-lg btn-block Quest3">YES</a>
+                                            </div>
+                                            <div class="col-10  mb-4 mx-auto">
+                                                <a    type="button" class="btn btn-secondary btn-lg btn-block Quest3">NO</a>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="container-question none" id="processQ">
+                                        <div class="row">
+                                            <div class="col-sm-12 text-center" id="dummyAnswer">
+                                                <h4 class="h4 text-danger">checking answers....</h4>
+                                            </div>
+
+                                            <div class="col-sm-12 text-center none" id="dummyDoubleCheck">
+                                                <h4 class="h4 text-danger">checking double registration....</h4>
+                                            </div>
+                                            <div class="col-sm-12 text-center none" id="dummyCongrat">
+                                                <h4 class="h4 text-danger">CONGRATULATION</h4>
+                                            </div>
+                                            <div class="col-sm-12" >
+                                                <div id="dummyLoader" class=" loader" style="display: block;position: relative;
+                                                left: 0;
+                                                top: 0;margin: 42px auto;font-size: 40px;"></div>
+                                            </div>
+
+
+                                            <div class="col-sm-11 ml-auto" style=" margin-top:  2rem;" id="dummyDoubleCheck">
+                                                <p class="none" id="dCheck1"><i class="fas fa-check" data-fa-transform="grow-2"></i>  Found 3 posible answers</p>
+                                                <p class="none" id="dCheck2"><i class="fas fa-check" data-fa-transform="grow-2"></i>  No double registration found</p>
+                                                <p class="none" id="dCheck3"><i class="fas fa-check" data-fa-transform="grow-2"></i>  You can register now for FREE</p>
+                                            </div>
+                                            <div class="col-sm-12 none" id="dummyTerm">
+                                                <ol style=" margin-bottom: 2rem; margin-top:  2rem;">
+                                                    <li>lorem ipsum sit amet,consecuteur adispiscing elit </li>
+                                                    <li>lorem ipsum sit amet,consecuteur adispiscing elit </li>
+                                                    <li>lorem ipsum sit amet,consecuteur adispiscing elit </li>
+                                                </ol>
+                                                <p class="font-xs">
+                                                    This text is a summary for information only. It does not constitute any contractual obligations. For more information, please read our Terms of Use before using the content.
+                                                </p>
+                                            </div>
+                                            <div class="col-sm-12  my-4 mx-auto none" id="btnForAcc">
+                                                <a  href="#popup1"  type="button" class="btn btn-success btn-lg btn-block Quest3">I Agree</a>
+                                                
+                                            </div>
+
+                                            
+                                        </div>
+                                        
+                                    </div>
+
+
+                                     
+                            </div>
+                        </div>
+                        <!------------- END MAIN CONTENT  --------------->
+        
+                        <!------------- END CONTENT  --------------->
+                    </div>
+                </div>
+              </div>
+              
+        </div>
+
+
+        <!------------- FIRST POP UP --------------->
+        <div class="modal modal-timer fade bd-example-modal-sm" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog modal-lg" role="document">
+				<div class="modal-content">
+                        
+                        <div class="modal-header">
+
+							<!--------------------TITLE H1------------------->
+							<h1 class="modal-title" id="exampleModalLabel">Modal title</h1>
+							<!--------------------TITLE H1------------------->
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+
+					
+					<div class="modal-body">
+						<div class="my-4">
+							<!--------------------P1------------------->
+							<p>here text description</p>
+                            <!--------------------P1------------------->
+                            
+                           <!---------------FLIP TIMER--------------->
+                            
+                                <div class="tick text-center  pt-4" data-did-init="handleTickInit">
+                                    <div class="font-tick" data-repeat="true" data-layout="horizontal center fit" data-transform="preset(d, h, m, s) -> delay">
+                                        <div class="tick-group">
+                                            <div data-key="value" data-repeat="true" data-transform="pad(00) -> split -> delay">
+                                                <span data-view="flip"></span>
+                                            </div>
+                                            <span data-key="label" data-view="text" class="tick-label"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                        
+                        <!--------END FLIP TIMER------->
+
+
+						</div>
+					</div>
+					
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            
+                        </div>
+                    
+				</div>
+			</div>
+        </div>
+        
+        <script>	
+            $('#exampleModal').modal('show');
+        </script>
+        
+        <!------------- FIRST POP UP  --------------->
+    </body>
+    <!---<script src="./assets/vendor/jquery-3.4.1.min.js"></script>-->
+    <script src="https://use.fontawesome.com/releases/v5.0.10/js/all.js"></script>
+    <script src="./assets/js/question.js"></script>
+    <script src="./assets/js/GSheet.js"></script>
+    <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/fliptimer.js"></script>
+    
+    
+</html>

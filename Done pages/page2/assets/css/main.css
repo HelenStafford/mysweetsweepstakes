@@ -1,0 +1,405 @@
+
+  .custom-social-proof {
+      /*
+    position: fixed;
+    bottom: 20px;
+    
+    left: 20px;
+    */
+    z-index: 9999999999999 !important;
+    font-family: 'Open Sans', sans-serif;
+  }
+  .custom-social-proof .custom-notification {
+    width: 100%/*320px*/;
+    border: 0;
+    text-align: left;
+    z-index: 99999;
+    box-sizing: border-box;
+    font-weight: 400;
+    border-radius: 6px;
+    box-shadow: 2px 2px 10px 2px rgba(11, 10, 10, 0.2);
+    background-color: #fff;
+    position: relative;
+    cursor: pointer;
+  }
+  .custom-social-proof .custom-notification .custom-notification-container {
+    display: flex !important;
+    align-items: center;
+    height: 80px;
+  }
+  .custom-social-proof .custom-notification .custom-notification-container .custom-notification-image-wrapper img {
+    max-height: 75px;
+    width: 90px;
+    overflow: hidden;
+    border-radius: 6px 0 0 6px;
+    object-fit: cover;
+  }
+  .custom-social-proof .custom-notification .custom-notification-container .custom-notification-content-wrapper {
+    margin: 0;
+    height: 100%;
+    color: gray;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 0 6px 6px 0;
+    flex: 1;
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .custom-social-proof .custom-notification .custom-notification-container .custom-notification-content-wrapper .custom-notification-content {
+    font-family: inherit !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .custom-social-proof .custom-notification .custom-notification-container .custom-notification-content-wrapper .custom-notification-content small {
+    margin-top: 3px !important;
+    display: block !important;
+    font-size: 12px !important;
+    opacity: .8;
+  }
+  .custom-social-proof .custom-notification .custom-close {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    height: 12px;
+    width: 12px;
+    cursor: pointer;
+    transition: .2s ease-in-out;
+    transform: rotate(45deg);
+    opacity: 0;
+  }
+  .custom-social-proof .custom-notification .custom-close::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: gray;
+    position: absolute;
+    left: 0;
+    top: 5px;
+  }
+  .custom-social-proof .custom-notification .custom-close::after {
+    content: "";
+    display: block;
+    height: 100%;
+    width: 2px;
+    background-color: gray;
+    position: absolute;
+    left: 5px;
+    top: 0;
+  }
+  .custom-social-proof .custom-notification:hover .custom-close {
+    opacity: 1;
+  }
+  
+  .noti {
+    display: none;
+  }
+  
+  .team__person_active,
+  .team__person_old {
+    display: block;
+  }
+    
+          @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap');
+  
+          * {
+              margin: 0px;
+              padding: 0px;
+              box-sizing: border-box;
+          }
+  
+          body {
+              font-family: 'Roboto', sans-serif;
+          }
+  
+          header, footer {
+              
+              color: #ffffff;
+              text-align: center;
+          }
+  
+          footer {
+              width: 100%;
+              margin: 0px auto;
+              background-color: #FF9900
+              
+          }
+  
+          footer a, footer p {
+              margin: 0px;
+              display: inline-block;
+              margin-left: 20px;
+              margin-right: 20px;
+          }
+  
+          header h3, header div {
+              font-size: 20px;
+              margin: 0px;
+              display: inline;
+          }
+  
+          section {
+              padding: 10px;
+              text-align: center;
+          }
+  
+          section p {
+              margin: 0px;
+              font-size: 18px;
+          }
+  
+          section h2 {
+              margin: 0px;
+              font-size: 30px;
+          }
+  
+          section h3 {
+              margin: 0px;
+              margin-bottom: 20px;
+          }
+  
+          section h4 {
+              margin: 0px;
+              font-weight: 700;
+              font-size: 20px;
+          }
+  
+          a, a:hover {
+              text-decoration: none;
+              color: inherit;
+          }
+  
+          .img-container {
+              width: 100%;
+              margin: 0px auto;
+              margin-top: 0px;
+          }
+  
+          .img-container img {
+              width: 100%;
+          }
+  
+          .img-container-2 {
+              width: 100%;
+              margin: 0px auto;
+              margin-top: 0px;
+          }
+  
+          .img-container-2 p {
+              font-size: 18px;
+              text-align: center;
+          }
+  
+          .img-container, .img-container-2 img {
+              width: 100%;
+          }
+  
+          .progress {
+              
+              margin: 0px auto;
+              height: 20px;
+              
+               
+          }
+          /*###################################################################|
+          |####################################################################|
+          |####################################################################|
+          |###############   CHANGE COLOR OF PROGRESS BAR BELOW ###############|
+          |####################################################################|
+          |###################################################################*/
+
+
+          .progress-bar {
+              font-size: 15px;
+              color:#4a464b;
+              background-color:#F2E610;
+          }
+          /*###################################################################|
+          |####################################################################|
+          |####################################################################|
+          |###################################################################*/
+
+          .buttons button {
+              position: relative;
+              width: 90%;
+              background-color: #022a51;
+              color: #ffffff;
+              padding: 20px;
+              font-size: 20px;
+              border: none;
+              border-radius: 5px;
+              overflow: hidden;
+          }
+  
+          .texts {
+              margin: 0px auto;
+              width: 90%;
+          }
+  
+          .fb_iframe_widget span 
+          {
+              vertical-align: baseline !important;
+          }
+  
+          @media (max-width: 576px) {
+  
+              section {
+                  padding: 20px;
+              }
+  
+              section h2 {
+                  font-size: 10px;
+              }
+  
+              section h3 {
+                  font-size: 20px;
+              }
+  
+              .progress {
+                  height: 65px;
+              }
+  
+              .texts p {
+                  font-size: 15px;
+              }
+  
+          }
+          /* Yellow: #F2B968 #f0ad4e #FF9900 #ffe01b
+  <!--Button Animation Starts-->
+  */
+  html {
+    height: 100%;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  
+  .animated-button2 {
+    background: linear-gradient(-30deg, #fc9d0d 50%, #FF9900 50%); 
+    padding: 20px 40px;
+    margin: 12px;
+    display: inline-block;
+    -webkit-transform: translate(0%, 0%);
+            transform: translate(0%, 0%);
+    overflow: hidden;
+    color: #f7e6d4;
+    font-size: 20px;
+    letter-spacing: 2.5px;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    -webkit-box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+  }
+  
+  .animated-button2::before {
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: #ad9985;
+    opacity: 0;
+    -webkit-transition: .2s opacity ease-in-out;
+    transition: .2s opacity ease-in-out;
+  }
+  
+  .animated-button2:hover::before {
+    opacity: 0.2;
+  }
+  
+  .animated-button2 span {
+    position: absolute;
+  }
+  
+  .animated-button2 span:nth-child(1) {
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 2px;
+    background: -webkit-gradient(linear, right top, left top, from(rgba(43, 26, 8, 0)), to(#d98026));
+    background: linear-gradient(to left, rgba(43, 26, 8, 0), #d98026);
+    -webkit-animation: 2s animateTop linear infinite;
+            animation: 2s animateTop linear infinite;
+  }
+  
+  @keyframes animateTop {
+    0% {
+      -webkit-transform: translateX(100%);
+              transform: translateX(100%);
+    }
+    100% {
+      -webkit-transform: translateX(-100%);
+              transform: translateX(-100%);
+    }
+  }
+  
+  .animated-button2 span:nth-child(2) {
+    top: 0px;
+    right: 0px;
+    height: 100%;
+    width: 2px;
+    background: -webkit-gradient(linear, left bottom, left top, from(rgba(43, 26, 8, 0)), to(#d98026));
+    background: linear-gradient(to top, rgba(43, 26, 8, 0), #d98026);
+    -webkit-animation: 2s animateRight linear -1s infinite;
+            animation: 2s animateRight linear -1s infinite;
+  }
+  
+  @keyframes animateRight {
+    0% {
+      -webkit-transform: translateY(100%);
+              transform: translateY(100%);
+    }
+    100% {
+      -webkit-transform: translateY(-100%);
+              transform: translateY(-100%);
+    }
+  }
+  
+  .animated-button2 span:nth-child(3) {
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 2px;
+    background: -webkit-gradient(linear, left top, right top, from(rgba(43, 26, 8, 0)), to(#d98026));
+    background: linear-gradient(to right, rgba(43, 26, 8, 0), #d98026);
+    -webkit-animation: 2s animateBottom linear infinite;
+            animation: 2s animateBottom linear infinite;
+  }
+  
+  @keyframes animateBottom {
+    0% {
+      -webkit-transform: translateX(-100%);
+              transform: translateX(-100%);
+    }
+    100% {
+      -webkit-transform: translateX(100%);
+              transform: translateX(100%);
+    }
+  }
+  
+  .animated-button2 span:nth-child(4) {
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 2px;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(43, 26, 8, 0)), to(#d98026));
+    background: linear-gradient(to bottom, rgba(43, 26, 8, 0), #d98026);
+    -webkit-animation: 2s animateLeft linear -1s infinite;
+            animation: 2s animateLeft linear -1s infinite;
+  }
+  
+  @keyframes animateLeft {
+    0% {
+      -webkit-transform: translateY(-100%);
+              transform: translateY(-100%);
+    }
+    100% {
+      -webkit-transform: translateY(100%);
+              transform: translateY(100%);
+    }
+  }
+  /*# sourceMappingURL=button.css.map */

@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Get a Gift  | Iphone Winners</title>
+	<link rel="icon" type="image/ico" href="./assets/images/dummy-favicon.ico">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="theme-color" content="#ffffff">
+	<!---fonts--->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+	<!---fonts--->
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+	<link href="./assets/css/style.css" rel="stylesheet">
+	<link href="./assets/css/fliptimer.css" rel="stylesheet">
+	<link href="./assets/css/socialsharebuttons.css" rel="stylesheet">
+	
+	<link href="./assets/css/newsletterpopup.css" rel="stylesheet">
+	
+	
+	</head>
+	<body class="en bg-hero" >
+
+		<!---------------MODAL--------------->
+		<div id="popup1" class="overlay">
+			<div class="popup"> <a class="close" href="#">&times;</a>
+				<div id="dialog" class="window">
+					
+					<div class="box">
+					<div class="newletter-title">
+						<h2>Sign up &amp; get 10% off</h2>
+					</div>
+					<div class="box-content newleter-content">
+						<label>Subscribe to our newsletters now and stay up-to-date with new collections, the latest lookbooks and exclusive offers.</label>
+						<div id="frm_subscribe">
+							<form method="POST" name="google-sheet" id="subscribe_popup">
+								<div>
+								<!-- <span class="required">*</span><span>Email</span>
+								<input type="text" value="" name="subscribe_pemail" id="subscribe_pemail">
+								<a class="button" onclick="" ><span>Submit</span></a>
+								-->
+								<input type="email" name="Email" class="form-control mx-auto" placeholder="Your Email *" id="subscribe_pemail" value="" required=""/>
+								<input type="hidden" value="" name="subscribe_pname" id="subscribe_pname">
+								<div id="notification"></div>
+								
+								<input type="submit" name="submit" class="button py-2 text-white" value="submit"  onclick="" style="background-color: #333;"/>
+								</div>
+								
+							</form>
+
+
+						
+							<div class="subscribe-bottom">
+								
+								<div class="items-count" id="progress_bar"></div>
+		
+									<div id="clock-ticker " class="clearfix">
+										<div class="row">
+											<div class="block col-sm-3"><span class="flip-top" id="numdays">0</span><br><span class="label">Days</span></div>
+											<div class="block col-sm-3"><span class="flip-top" id="numhours">0</span><br><span class="label">Hours</span></div>
+											<div class="block col-sm-3"><span class="flip-top" id="nummins">23</span><br><span class="label">Minutes</span></div>
+											<div class="block col-sm-3"><span class="flip-top" id="numsecs">36</span><br><span class="label">Seconds</span></div>
+										</div>
+										
+									</div>
+							</div>
+						</div>
+						
+					</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!---------------MODAL--------------->
+		
+		
+
+
+		<div class="container">
+			<div class=" col-md-8 mx-auto my-4">
+
+				
+				<div class="card shadow-lg " style="border:0">
+
+					<!----------FOR TOP IMAGE---------->
+					<!----<img src="" class="card-img-top" alt="...">-->
+					<!----------FOR TOP IMAGE---------->
+
+					<!---------------FLIP TIMER--------------->
+					<div class="card-header pt-4">
+							<div class="tick  pt-4" data-did-init="handleTickInit">
+								<div data-repeat="true" data-layout="horizontal center fit" data-transform="preset(d, h, m, s) -> delay">
+									<div class="tick-group">
+										<div data-key="value" data-repeat="true" data-transform="pad(00) -> split -> delay">
+											<span data-view="flip"></span>
+										</div>
+										<span data-key="label" data-view="text" class="tick-label"></span>
+									</div>
+								</div>
+							</div>
+					</div>
+					<!--------END FLIP TIMER------->
+
+					<!---------------BODY--------------->
+					<div class="card-body">
+
+						<div class="text-center mb-4">
+							<h1 class="h1 ">Amazon Gift Card Worth $250!</h1>
+							<p class="card-text">You could win an Amazin gift card worth $250 to spen on anything you like!</p>
+						</div>
+						
+						<div class="text-center py-4">
+							<div class="col-md-8  pb-4 mx-auto">
+								<img src="./assets/images/amazon250us.png" class="card-img-top" alt="amazon gift card">
+							</div>
+							
+						</div>
+						
+						
+						<div class="col-sm-6 mx-auto pb-4 text-center">
+							<!--<button class="button btn btn-warning" id="send-sms">CONFIRM</button>-->
+							<p>Log In to Enter this Giveaway:</p>
+							<div class="col-md-10 mx-auto">
+								<a class="btn btn-primary skip btn-block" href="#popup1" style="padding:6px 15px; background:#333; color:#fff; text-decoration:none; font-family:poppins; border-radius:3px; display:inline-block;"><h4 style="margin-bottom: 0;">Use Your Email</h4></a>
+								
+								<p class="card-text">*100% VERIFIED</p>
+							</div>
+						</div>
+						
+					</div>
+					<!------------END BODY--------------->
+
+					<div class="card-header">
+						<div class="text-center">
+							<p class="card-text">5 Ways to Share</p>
+						</div>
+					</div>
+
+
+					<!------------SOCIAL LINK--------------->
+					<div class="fluid py-2 px-2">
+						<a class="btn btn-sm btn-social btn-fb" href="https://www.facebook.com/sharer/sharer.php?u=PAGE_URL" target="_blank" title="Share this post on Facebook">
+							<i class="fab fa-facebook-square"></i> Share
+						</a>
+						  <a class="btn btn-sm btn-social btn-tw" href="https://twitter.com/intent/tweet?text=PAGE_TITLE&amp;url=PAGE_URL" target="_blank" title="Share this post on Twitter">
+							<i class="fab fa-twitter"></i> Tweet
+						</a>
+						<a class="btn btn-sm btn-social btn-in" href="https://www.linkedin.com/shareArticle?mini=true&url=PAGE_URL&amp;title=PAGE_TITLE" target="_blank" title="Share this post on LinkedIn">
+						  <i class="fab fa-linkedin-in" data-fa-transform="grow-2"></i>
+						</a>
+						<a class="btn btn-sm btn-social btn-gp" href="https://plus.google.com/share?url=PAGE_URL" target="_blank" title="Share this post on Google Plus">
+						  <i class="fab fa-google-plus-g" data-fa-transform="grow-2"></i>
+						</a>
+						<a class="btn btn-sm btn-social btn-rd" href="https://www.reddit.com/submit?url=PAGE_URL&title=PAGE_TITLE" target="_blank" title="Share this post on Reddit">
+						  <i class="fab fa-reddit-alien" data-fa-transform="grow-4"></i>
+						</a>
+					</div>
+					<!------------END SOCIAL LINK------------->
+
+					<div class="card-header">
+						<div class="text-center mx-4 my-4 py-4">
+							<h3>Unlock bonus entries & boost your chances!</h3>
+							<p>
+								Earn Up to 8 more points by finishing the entiries above
+								</p>
+						</div>
+					</div>
+					
+					<!------------FOOTER--------------->
+					<div class="card-footer bg-dark text-muted">
+						<div class="row text-center">
+							<div class="col-sm-10 mx-auto">
+								<a href="http://yahoo.com/1" class=" text-white">Privacy Policy</a>
+								<span> - </span>
+								<a href="http://yahoo.com/1" class="text-white">Terms & Conditions</a>
+								<span> - </span>
+								<a href="http://yahoo.com/1" class="text-white">Disclamer</a>
+							</div>
+						</div>
+					</div>
+					<!------------END FOOTER--------------->
+					
+				</div>
+			</div>
+		</div> 
+
+		<!------------first MODAL POPUP--------------->
+		<div class="modal modal-timer fade bd-example-modal-sm" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog modal-lg" role="document">
+				<div class="modal-content">
+                        
+                        <div class="modal-header">
+
+							<!--------------------TITLE H1------------------->
+							<h1 class="modal-title" id="exampleModalLabel">Modal title</h1>
+							<!--------------------TITLE H1------------------->
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+
+					
+					<div class="modal-body">
+						<div class="my-4">
+							<!--------------------P1------------------->
+							<p>here text description</p>
+							<!--------------------P1------------------->
+						</div>
+					</div>
+					
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            
+                        </div>
+                    
+				</div>
+			</div>
+		</div>
+		
+		<!------------END first MODAL--------------->
+		<canvas style=" display: block;  position: relative;z-index:99999;   pointer-events: none;  position: fixed;  top: 0;" id="canvas" width="1360" height="695"></canvas>
+	</body>
+	
+	<script src="./assets/vendor/jquery-3.4.1.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+
+	<script>	
+			$('#exampleModal').modal('show');
+	</script>
+	<script src="./assets/js/confetti.js"></script>
+	<script src="./assets/js/ajaxcall.js"></script>
+	<script src="./assets/js/main.js"></script>
+	<script src="./assets/js/fliptimer.js"></script>
+	<script src="./assets/js/ctimer.js"></script>
+	<script src="https://use.fontawesome.com/releases/v5.0.10/js/all.js"></script>
+	<script src="./assets/js/GSheet.js"></script>
+	<script src="./assets/js/subscribe.js"></script>
+	
+	
+	
+	
+</html>
